@@ -1,0 +1,282 @@
+{
+  "restaurant": {
+    "name": "بيت المذاق",
+    "language": "ar-EG",
+    "tone": "ودود، مختصر، محترم، باللهجة المصرية الخفيفة",
+    "conversation": {
+      "opening_messages": [
+        "أهلًا وسهلًا بيك في بيت المذاق. تحب أساعدك في المنيو، طلب جديد، حجز، ولا دليفري؟",
+        "نورت بيت المذاق. قولّي تحب تاكل إيه وأنا أظبط لك الطلب."
+      ],
+      "closing_messages": [
+        "شكرًا ليك، نورت بيت المذاق. مستنيينك دايمًا.",
+        "تحت أمرك في أي وقت. يومك جميل."
+      ],
+      "empty_message": "أنا معاك. اكتب اسم صنف، أو قول طلب جديد، حجز، دليفري، أو منيو.",
+      "order_more_prompt": "تحب تضيف حاجة تانية؟ لو الطلب كده تمام قول: تأكيد الطلب."
+    },
+    "phone": "01000000000",
+    "address": "شارع النيل، المعادي، القاهرة",
+    "maps_url": "https://maps.example.com/beit-elmazak",
+    "opening_hours": {
+      "saturday_to_wednesday": "12:00 ظهرًا - 12:00 منتصف الليل",
+      "thursday_to_friday": "12:00 ظهرًا - 2:00 صباحًا"
+    },
+    "reservation_policy": {
+      "enabled": true,
+      "min_people": 1,
+      "max_people_online": 12,
+      "required_fields": [
+        "date",
+        "people",
+        "time",
+        "name",
+        "phone"
+      ],
+      "notes": "الحجز بيتأكد برسالة تأكيد من المطعم. للحجوزات أكبر من 12 شخص، العميل يتواصل تليفونيًا."
+    },
+    "delivery_policy": {
+      "enabled": true,
+      "areas": [
+        "المعادي",
+        "زهراء المعادي",
+        "دار السلام",
+        "البساتين"
+      ],
+      "estimated_minutes": "45-60 دقيقة",
+      "minimum_order_egp": 150
+    },
+    "order_policy": {
+      "enabled": true,
+      "service_types": [
+        "dine_in",
+        "takeaway",
+        "delivery"
+      ],
+      "required_fields": [
+        "service_type",
+        "name",
+        "phone"
+      ],
+      "delivery_required_fields": [
+        "address"
+      ],
+      "notes": "الطلب هنا مبدئي للتجربة، والتأكيد النهائي يتم من الكاشير أو نظام الطلبات."
+    }
+  },
+  "categories": [
+    {
+      "id": "starters",
+      "name": "مقبلات",
+      "items": [
+        {
+          "id": "lentil_soup",
+          "name": "شوربة عدس",
+          "price_egp": 55,
+          "description": "شوربة عدس سخنة مع عيش محمص ولمون.",
+          "tags": [
+            "نباتي",
+            "سخن",
+            "شوربة"
+          ],
+          "available": true
+        },
+        {
+          "id": "mix_mezza",
+          "name": "ميكس مزات شرقي",
+          "price_egp": 135,
+          "description": "طحينة، بابا غنوج، مخلل، وعيش بلدي.",
+          "tags": [
+            "مشاركة",
+            "شرقي"
+          ],
+          "available": true
+        },
+        {
+          "id": "crispy_chicken",
+          "name": "تشيكن كرسبي",
+          "price_egp": 120,
+          "description": "قطع فراخ مقرمشة مع صوص عسل مستردة.",
+          "tags": [
+            "فراخ",
+            "مقرمش"
+          ],
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "أطباق رئيسية",
+      "items": [
+        {
+          "id": "grilled_chicken",
+          "name": "نصف فرخة مشوية",
+          "price_egp": 210,
+          "description": "نصف فرخة متبلة على الفحم مع رز بسمتي وسلطة.",
+          "tags": [
+            "فراخ",
+            "مشوي",
+            "غداء",
+            "عشاء"
+          ],
+          "available": true
+        },
+        {
+          "id": "kofta",
+          "name": "كفتة مشوية",
+          "price_egp": 245,
+          "description": "كفتة على الفحم مع بطاطس وسلطة طحينة.",
+          "tags": [
+            "لحوم",
+            "مشوي",
+            "غداء",
+            "عشاء"
+          ],
+          "available": true
+        },
+        {
+          "id": "seafood_pasta",
+          "name": "باستا سي فود",
+          "price_egp": 285,
+          "description": "باستا كريمي بالجمبري والكاليماري.",
+          "tags": [
+            "سي فود",
+            "باستا",
+            "غداء",
+            "عشاء"
+          ],
+          "available": true
+        },
+        {
+          "id": "vegetarian_moussaka",
+          "name": "مسقعة نباتي",
+          "price_egp": 150,
+          "description": "مسقعة باذنجان وفلفل وطماطم، مع رز أبيض.",
+          "tags": [
+            "نباتي",
+            "غداء",
+            "شرقي"
+          ],
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "sandwiches",
+      "name": "ساندوتشات",
+      "items": [
+        {
+          "id": "shawarma_chicken",
+          "name": "شاورما فراخ",
+          "price_egp": 95,
+          "description": "شاورما فراخ تومية ومخلل في عيش صاج.",
+          "tags": [
+            "فراخ",
+            "سريع",
+            "ساندوتش"
+          ],
+          "available": true
+        },
+        {
+          "id": "beef_burger",
+          "name": "برجر لحم",
+          "price_egp": 175,
+          "description": "برجر لحم 180 جم، جبنة شيدر، صوص خاص، وبطاطس.",
+          "tags": [
+            "لحوم",
+            "برجر",
+            "سريع"
+          ],
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "حلويات",
+      "items": [
+        {
+          "id": "konafa",
+          "name": "كنافة بالقشطة",
+          "price_egp": 85,
+          "description": "كنافة طازة بالقشطة والفستق.",
+          "tags": [
+            "حلو",
+            "شرقي"
+          ],
+          "available": true
+        },
+        {
+          "id": "molten_cake",
+          "name": "مولتن كيك",
+          "price_egp": 110,
+          "description": "كيك شوكولاتة ساخن مع آيس كريم فانيليا.",
+          "tags": [
+            "حلو",
+            "شوكولاتة"
+          ],
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "مشروبات",
+      "items": [
+        {
+          "id": "mint_lemonade",
+          "name": "ليمون نعناع",
+          "price_egp": 65,
+          "description": "ليمون فريش بالنعناع.",
+          "tags": [
+            "بارد",
+            "فريش"
+          ],
+          "available": true
+        },
+        {
+          "id": "turkish_coffee",
+          "name": "قهوة تركي",
+          "price_egp": 45,
+          "description": "قهوة تركي سادة أو وسط.",
+          "tags": [
+            "سخن",
+            "قهوة"
+          ],
+          "available": true
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "هل في أكل نباتي؟",
+      "answer": "أيوه، عندنا شوربة عدس ومسقعة نباتي، وكمان ممكن نرشح لك اختيارات مناسبة من المقبلات."
+    },
+    {
+      "question": "هل في توصيل؟",
+      "answer": "أيوه، التوصيل متاح للمناطق القريبة من المطعم، والمدة غالبًا 45-60 دقيقة."
+    },
+    {
+      "question": "هل ينفع أحجز؟",
+      "answer": "أكيد، محتاجين الاسم، رقم الموبايل، اليوم، الساعة، وعدد الأفراد."
+    },
+    {
+      "question": "هل في عروض؟",
+      "answer": "العروض بتتغير حسب اليوم. ممكن أبلغك بالمتاح حاليًا أو أوصلك بحد من فريق المطعم."
+    }
+  ],
+  "handoff": {
+    "triggers": [
+      "شكوى",
+      "مشكلة",
+      "مدير",
+      "فلوس",
+      "استرجاع",
+      "تأخير كبير",
+      "حساسية شديدة"
+    ],
+    "message": "تمام، هحوّل كلامك لحد من فريق المطعم يتابع معاك بنفسه."
+  }
+}

@@ -1,0 +1,606 @@
+{"text": "السلام عليكم", "intent": "greeting", "entities": {}}
+{"text": "مساء الخير", "intent": "greeting", "entities": {}}
+{"text": "صباح الخير", "intent": "greeting", "entities": {}}
+{"text": "هاي", "intent": "greeting", "entities": {}}
+{"text": "أهلا", "intent": "greeting", "entities": {}}
+{"text": "عاملين ايه", "intent": "greeting", "entities": {}}
+{"text": "عايز أحجز بكرة الساعة 8", "intent": "reservation", "entities": {}}
+{"text": "محتاج ترابيزة 4 أفراد النهاردة", "intent": "reservation", "entities": {}}
+{"text": "احجزلي يوم 20/5 الساعة 6", "intent": "reservation", "entities": {}}
+{"text": "ينفع حجز الاتنين الساعة 5؟", "intent": "reservation", "entities": {}}
+{"text": "عايز حجز ل 9 أشخاص", "intent": "reservation", "entities": {}}
+{"text": "احجز ترابيزة باسم كريم", "intent": "reservation", "entities": {}}
+{"text": "بتوصلوا المعادي؟", "intent": "delivery", "entities": {}}
+{"text": "أقل أوردر كام؟", "intent": "delivery", "entities": {}}
+{"text": "العنوان فين؟", "intent": "location", "entities": {}}
+{"text": "مواعيدكم ايه؟", "intent": "hours", "entities": {}}
+{"text": "بتقفلوا الساعة كام؟", "intent": "hours", "entities": {}}
+{"text": "في دفع فيزا؟", "intent": "payment", "entities": {}}
+{"text": "في عروض النهاردة؟", "intent": "promotions", "entities": {}}
+{"text": "شوربة عدس بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة عدس"}}
+{"text": "متاح شوربة عدس؟", "intent": "price_or_item", "entities": {"item": "شوربة عدس"}}
+{"text": "عايز شوربة عدس", "intent": "order", "entities": {"item": "شوربة عدس", "quantity": 1}}
+{"text": "ضيف 2 شوربة عدس", "intent": "order", "entities": {"item": "شوربة عدس", "quantity": 2}}
+{"text": "مكونات شوربة عدس ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة عدس"}}
+{"text": "شوربة كريمة فراخ بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة كريمة فراخ"}}
+{"text": "متاح شوربة كريمة فراخ؟", "intent": "price_or_item", "entities": {"item": "شوربة كريمة فراخ"}}
+{"text": "عايز شوربة كريمة فراخ", "intent": "order", "entities": {"item": "شوربة كريمة فراخ", "quantity": 1}}
+{"text": "ضيف 2 شوربة كريمة فراخ", "intent": "order", "entities": {"item": "شوربة كريمة فراخ", "quantity": 2}}
+{"text": "مكونات شوربة كريمة فراخ ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة كريمة فراخ"}}
+{"text": "شوربة سي فود بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة سي فود"}}
+{"text": "متاح شوربة سي فود؟", "intent": "price_or_item", "entities": {"item": "شوربة سي فود"}}
+{"text": "عايز شوربة سي فود", "intent": "order", "entities": {"item": "شوربة سي فود", "quantity": 1}}
+{"text": "ضيف 2 شوربة سي فود", "intent": "order", "entities": {"item": "شوربة سي فود", "quantity": 2}}
+{"text": "مكونات شوربة سي فود ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة سي فود"}}
+{"text": "شوربة مشروم بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة مشروم"}}
+{"text": "متاح شوربة مشروم؟", "intent": "price_or_item", "entities": {"item": "شوربة مشروم"}}
+{"text": "عايز شوربة مشروم", "intent": "order", "entities": {"item": "شوربة مشروم", "quantity": 1}}
+{"text": "ضيف 2 شوربة مشروم", "intent": "order", "entities": {"item": "شوربة مشروم", "quantity": 2}}
+{"text": "مكونات شوربة مشروم ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة مشروم"}}
+{"text": "شوربة طماطم بالريحان بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة طماطم بالريحان"}}
+{"text": "متاح شوربة طماطم بالريحان؟", "intent": "price_or_item", "entities": {"item": "شوربة طماطم بالريحان"}}
+{"text": "عايز شوربة طماطم بالريحان", "intent": "order", "entities": {"item": "شوربة طماطم بالريحان", "quantity": 1}}
+{"text": "ضيف 2 شوربة طماطم بالريحان", "intent": "order", "entities": {"item": "شوربة طماطم بالريحان", "quantity": 2}}
+{"text": "مكونات شوربة طماطم بالريحان ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة طماطم بالريحان"}}
+{"text": "شوربة لسان عصفور بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة لسان عصفور"}}
+{"text": "متاح شوربة لسان عصفور؟", "intent": "price_or_item", "entities": {"item": "شوربة لسان عصفور"}}
+{"text": "عايز شوربة لسان عصفور", "intent": "order", "entities": {"item": "شوربة لسان عصفور", "quantity": 1}}
+{"text": "ضيف 2 شوربة لسان عصفور", "intent": "order", "entities": {"item": "شوربة لسان عصفور", "quantity": 2}}
+{"text": "مكونات شوربة لسان عصفور ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة لسان عصفور"}}
+{"text": "شوربة بصل فرنسية بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة بصل فرنسية"}}
+{"text": "متاح شوربة بصل فرنسية؟", "intent": "price_or_item", "entities": {"item": "شوربة بصل فرنسية"}}
+{"text": "عايز شوربة بصل فرنسية", "intent": "order", "entities": {"item": "شوربة بصل فرنسية", "quantity": 1}}
+{"text": "ضيف 2 شوربة بصل فرنسية", "intent": "order", "entities": {"item": "شوربة بصل فرنسية", "quantity": 2}}
+{"text": "مكونات شوربة بصل فرنسية ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة بصل فرنسية"}}
+{"text": "شوربة خضار بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة خضار"}}
+{"text": "متاح شوربة خضار؟", "intent": "price_or_item", "entities": {"item": "شوربة خضار"}}
+{"text": "عايز شوربة خضار", "intent": "order", "entities": {"item": "شوربة خضار", "quantity": 1}}
+{"text": "ضيف 2 شوربة خضار", "intent": "order", "entities": {"item": "شوربة خضار", "quantity": 2}}
+{"text": "مكونات شوربة خضار ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة خضار"}}
+{"text": "سلطة خضراء بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة خضراء"}}
+{"text": "متاح سلطة خضراء؟", "intent": "price_or_item", "entities": {"item": "سلطة خضراء"}}
+{"text": "عايز سلطة خضراء", "intent": "order", "entities": {"item": "سلطة خضراء", "quantity": 1}}
+{"text": "ضيف 2 سلطة خضراء", "intent": "order", "entities": {"item": "سلطة خضراء", "quantity": 2}}
+{"text": "مكونات سلطة خضراء ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة خضراء"}}
+{"text": "سلطة سيزر فراخ بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة سيزر فراخ"}}
+{"text": "متاح سلطة سيزر فراخ؟", "intent": "price_or_item", "entities": {"item": "سلطة سيزر فراخ"}}
+{"text": "عايز سلطة سيزر فراخ", "intent": "order", "entities": {"item": "سلطة سيزر فراخ", "quantity": 1}}
+{"text": "ضيف 2 سلطة سيزر فراخ", "intent": "order", "entities": {"item": "سلطة سيزر فراخ", "quantity": 2}}
+{"text": "مكونات سلطة سيزر فراخ ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة سيزر فراخ"}}
+{"text": "سلطة فتوش بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة فتوش"}}
+{"text": "متاح سلطة فتوش؟", "intent": "price_or_item", "entities": {"item": "سلطة فتوش"}}
+{"text": "عايز سلطة فتوش", "intent": "order", "entities": {"item": "سلطة فتوش", "quantity": 1}}
+{"text": "ضيف 2 سلطة فتوش", "intent": "order", "entities": {"item": "سلطة فتوش", "quantity": 2}}
+{"text": "مكونات سلطة فتوش ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة فتوش"}}
+{"text": "سلطة تبولة بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة تبولة"}}
+{"text": "متاح سلطة تبولة؟", "intent": "price_or_item", "entities": {"item": "سلطة تبولة"}}
+{"text": "عايز سلطة تبولة", "intent": "order", "entities": {"item": "سلطة تبولة", "quantity": 1}}
+{"text": "ضيف 2 سلطة تبولة", "intent": "order", "entities": {"item": "سلطة تبولة", "quantity": 2}}
+{"text": "مكونات سلطة تبولة ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة تبولة"}}
+{"text": "سلطة جرجير بالرمان بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة جرجير بالرمان"}}
+{"text": "متاح سلطة جرجير بالرمان؟", "intent": "price_or_item", "entities": {"item": "سلطة جرجير بالرمان"}}
+{"text": "عايز سلطة جرجير بالرمان", "intent": "order", "entities": {"item": "سلطة جرجير بالرمان", "quantity": 1}}
+{"text": "ضيف 2 سلطة جرجير بالرمان", "intent": "order", "entities": {"item": "سلطة جرجير بالرمان", "quantity": 2}}
+{"text": "مكونات سلطة جرجير بالرمان ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة جرجير بالرمان"}}
+{"text": "سلطة طحينة بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة طحينة"}}
+{"text": "متاح سلطة طحينة؟", "intent": "price_or_item", "entities": {"item": "سلطة طحينة"}}
+{"text": "عايز سلطة طحينة", "intent": "order", "entities": {"item": "سلطة طحينة", "quantity": 1}}
+{"text": "ضيف 2 سلطة طحينة", "intent": "order", "entities": {"item": "سلطة طحينة", "quantity": 2}}
+{"text": "مكونات سلطة طحينة ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة طحينة"}}
+{"text": "سلطة بابا غنوج بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة بابا غنوج"}}
+{"text": "متاح سلطة بابا غنوج؟", "intent": "price_or_item", "entities": {"item": "سلطة بابا غنوج"}}
+{"text": "عايز سلطة بابا غنوج", "intent": "order", "entities": {"item": "سلطة بابا غنوج", "quantity": 1}}
+{"text": "ضيف 2 سلطة بابا غنوج", "intent": "order", "entities": {"item": "سلطة بابا غنوج", "quantity": 2}}
+{"text": "مكونات سلطة بابا غنوج ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة بابا غنوج"}}
+{"text": "سلطة زبادي بالخيار بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة زبادي بالخيار"}}
+{"text": "متاح سلطة زبادي بالخيار؟", "intent": "price_or_item", "entities": {"item": "سلطة زبادي بالخيار"}}
+{"text": "عايز سلطة زبادي بالخيار", "intent": "order", "entities": {"item": "سلطة زبادي بالخيار", "quantity": 1}}
+{"text": "ضيف 2 سلطة زبادي بالخيار", "intent": "order", "entities": {"item": "سلطة زبادي بالخيار", "quantity": 2}}
+{"text": "مكونات سلطة زبادي بالخيار ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة زبادي بالخيار"}}
+{"text": "سلطة كينوا بكام؟", "intent": "price_or_item", "entities": {"item": "سلطة كينوا"}}
+{"text": "متاح سلطة كينوا؟", "intent": "price_or_item", "entities": {"item": "سلطة كينوا"}}
+{"text": "عايز سلطة كينوا", "intent": "order", "entities": {"item": "سلطة كينوا", "quantity": 1}}
+{"text": "ضيف 2 سلطة كينوا", "intent": "order", "entities": {"item": "سلطة كينوا", "quantity": 2}}
+{"text": "مكونات سلطة كينوا ايه؟", "intent": "price_or_item", "entities": {"item": "سلطة كينوا"}}
+{"text": "ميكس مزات شرقي بكام؟", "intent": "price_or_item", "entities": {"item": "ميكس مزات شرقي"}}
+{"text": "متاح ميكس مزات شرقي؟", "intent": "price_or_item", "entities": {"item": "ميكس مزات شرقي"}}
+{"text": "عايز ميكس مزات شرقي", "intent": "order", "entities": {"item": "ميكس مزات شرقي", "quantity": 1}}
+{"text": "ضيف 2 ميكس مزات شرقي", "intent": "order", "entities": {"item": "ميكس مزات شرقي", "quantity": 2}}
+{"text": "مكونات ميكس مزات شرقي ايه؟", "intent": "price_or_item", "entities": {"item": "ميكس مزات شرقي"}}
+{"text": "بطاطس محمرة بكام؟", "intent": "price_or_item", "entities": {"item": "بطاطس محمرة"}}
+{"text": "متاح بطاطس محمرة؟", "intent": "price_or_item", "entities": {"item": "بطاطس محمرة"}}
+{"text": "عايز بطاطس محمرة", "intent": "order", "entities": {"item": "بطاطس محمرة", "quantity": 1}}
+{"text": "ضيف 2 بطاطس محمرة", "intent": "order", "entities": {"item": "بطاطس محمرة", "quantity": 2}}
+{"text": "مكونات بطاطس محمرة ايه؟", "intent": "price_or_item", "entities": {"item": "بطاطس محمرة"}}
+{"text": "بطاطس بالجبنة بكام؟", "intent": "price_or_item", "entities": {"item": "بطاطس بالجبنة"}}
+{"text": "متاح بطاطس بالجبنة؟", "intent": "price_or_item", "entities": {"item": "بطاطس بالجبنة"}}
+{"text": "عايز بطاطس بالجبنة", "intent": "order", "entities": {"item": "بطاطس بالجبنة", "quantity": 1}}
+{"text": "ضيف 2 بطاطس بالجبنة", "intent": "order", "entities": {"item": "بطاطس بالجبنة", "quantity": 2}}
+{"text": "مكونات بطاطس بالجبنة ايه؟", "intent": "price_or_item", "entities": {"item": "بطاطس بالجبنة"}}
+{"text": "تشيكن كرسبي بكام؟", "intent": "price_or_item", "entities": {"item": "تشيكن كرسبي"}}
+{"text": "متاح تشيكن كرسبي؟", "intent": "price_or_item", "entities": {"item": "تشيكن كرسبي"}}
+{"text": "عايز تشيكن كرسبي", "intent": "order", "entities": {"item": "تشيكن كرسبي", "quantity": 1}}
+{"text": "ضيف 2 تشيكن كرسبي", "intent": "order", "entities": {"item": "تشيكن كرسبي", "quantity": 2}}
+{"text": "مكونات تشيكن كرسبي ايه؟", "intent": "price_or_item", "entities": {"item": "تشيكن كرسبي"}}
+{"text": "موتزاريلا ستيكس بكام؟", "intent": "price_or_item", "entities": {"item": "موتزاريلا ستيكس"}}
+{"text": "متاح موتزاريلا ستيكس؟", "intent": "price_or_item", "entities": {"item": "موتزاريلا ستيكس"}}
+{"text": "عايز موتزاريلا ستيكس", "intent": "order", "entities": {"item": "موتزاريلا ستيكس", "quantity": 1}}
+{"text": "ضيف 2 موتزاريلا ستيكس", "intent": "order", "entities": {"item": "موتزاريلا ستيكس", "quantity": 2}}
+{"text": "مكونات موتزاريلا ستيكس ايه؟", "intent": "price_or_item", "entities": {"item": "موتزاريلا ستيكس"}}
+{"text": "سمبوسك جبنة بكام؟", "intent": "price_or_item", "entities": {"item": "سمبوسك جبنة"}}
+{"text": "متاح سمبوسك جبنة؟", "intent": "price_or_item", "entities": {"item": "سمبوسك جبنة"}}
+{"text": "عايز سمبوسك جبنة", "intent": "order", "entities": {"item": "سمبوسك جبنة", "quantity": 1}}
+{"text": "ضيف 2 سمبوسك جبنة", "intent": "order", "entities": {"item": "سمبوسك جبنة", "quantity": 2}}
+{"text": "مكونات سمبوسك جبنة ايه؟", "intent": "price_or_item", "entities": {"item": "سمبوسك جبنة"}}
+{"text": "سمبوسك لحمة بكام؟", "intent": "price_or_item", "entities": {"item": "سمبوسك لحمة"}}
+{"text": "متاح سمبوسك لحمة؟", "intent": "price_or_item", "entities": {"item": "سمبوسك لحمة"}}
+{"text": "عايز سمبوسك لحمة", "intent": "order", "entities": {"item": "سمبوسك لحمة", "quantity": 1}}
+{"text": "ضيف 2 سمبوسك لحمة", "intent": "order", "entities": {"item": "سمبوسك لحمة", "quantity": 2}}
+{"text": "مكونات سمبوسك لحمة ايه؟", "intent": "price_or_item", "entities": {"item": "سمبوسك لحمة"}}
+{"text": "ورق عنب بكام؟", "intent": "price_or_item", "entities": {"item": "ورق عنب"}}
+{"text": "متاح ورق عنب؟", "intent": "price_or_item", "entities": {"item": "ورق عنب"}}
+{"text": "عايز ورق عنب", "intent": "order", "entities": {"item": "ورق عنب", "quantity": 1}}
+{"text": "ضيف 2 ورق عنب", "intent": "order", "entities": {"item": "ورق عنب", "quantity": 2}}
+{"text": "مكونات ورق عنب ايه؟", "intent": "price_or_item", "entities": {"item": "ورق عنب"}}
+{"text": "كبة شامية بكام؟", "intent": "price_or_item", "entities": {"item": "كبة شامية"}}
+{"text": "متاح كبة شامية؟", "intent": "price_or_item", "entities": {"item": "كبة شامية"}}
+{"text": "عايز كبة شامية", "intent": "order", "entities": {"item": "كبة شامية", "quantity": 1}}
+{"text": "ضيف 2 كبة شامية", "intent": "order", "entities": {"item": "كبة شامية", "quantity": 2}}
+{"text": "مكونات كبة شامية ايه؟", "intent": "price_or_item", "entities": {"item": "كبة شامية"}}
+{"text": "أجنحة بافلو بكام؟", "intent": "price_or_item", "entities": {"item": "أجنحة بافلو"}}
+{"text": "متاح أجنحة بافلو؟", "intent": "price_or_item", "entities": {"item": "أجنحة بافلو"}}
+{"text": "عايز أجنحة بافلو", "intent": "order", "entities": {"item": "أجنحة بافلو", "quantity": 1}}
+{"text": "ضيف 2 أجنحة بافلو", "intent": "order", "entities": {"item": "أجنحة بافلو", "quantity": 2}}
+{"text": "مكونات أجنحة بافلو ايه؟", "intent": "price_or_item", "entities": {"item": "أجنحة بافلو"}}
+{"text": "شاورما فراخ بكام؟", "intent": "price_or_item", "entities": {"item": "شاورما فراخ"}}
+{"text": "متاح شاورما فراخ؟", "intent": "price_or_item", "entities": {"item": "شاورما فراخ"}}
+{"text": "عايز شاورما فراخ", "intent": "order", "entities": {"item": "شاورما فراخ", "quantity": 1}}
+{"text": "ضيف 2 شاورما فراخ", "intent": "order", "entities": {"item": "شاورما فراخ", "quantity": 2}}
+{"text": "مكونات شاورما فراخ ايه؟", "intent": "price_or_item", "entities": {"item": "شاورما فراخ"}}
+{"text": "شاورما لحمة بكام؟", "intent": "price_or_item", "entities": {"item": "شاورما لحمة"}}
+{"text": "متاح شاورما لحمة؟", "intent": "price_or_item", "entities": {"item": "شاورما لحمة"}}
+{"text": "عايز شاورما لحمة", "intent": "order", "entities": {"item": "شاورما لحمة", "quantity": 1}}
+{"text": "ضيف 2 شاورما لحمة", "intent": "order", "entities": {"item": "شاورما لحمة", "quantity": 2}}
+{"text": "مكونات شاورما لحمة ايه؟", "intent": "price_or_item", "entities": {"item": "شاورما لحمة"}}
+{"text": "برجر لحم بكام؟", "intent": "price_or_item", "entities": {"item": "برجر لحم"}}
+{"text": "متاح برجر لحم؟", "intent": "price_or_item", "entities": {"item": "برجر لحم"}}
+{"text": "عايز برجر لحم", "intent": "order", "entities": {"item": "برجر لحم", "quantity": 1}}
+{"text": "ضيف 2 برجر لحم", "intent": "order", "entities": {"item": "برجر لحم", "quantity": 2}}
+{"text": "مكونات برجر لحم ايه؟", "intent": "price_or_item", "entities": {"item": "برجر لحم"}}
+{"text": "برجر فراخ كرسبي بكام؟", "intent": "price_or_item", "entities": {"item": "برجر فراخ كرسبي"}}
+{"text": "متاح برجر فراخ كرسبي؟", "intent": "price_or_item", "entities": {"item": "برجر فراخ كرسبي"}}
+{"text": "عايز برجر فراخ كرسبي", "intent": "order", "entities": {"item": "برجر فراخ كرسبي", "quantity": 1}}
+{"text": "ضيف 2 برجر فراخ كرسبي", "intent": "order", "entities": {"item": "برجر فراخ كرسبي", "quantity": 2}}
+{"text": "مكونات برجر فراخ كرسبي ايه؟", "intent": "price_or_item", "entities": {"item": "برجر فراخ كرسبي"}}
+{"text": "ساندوتش كفتة بكام؟", "intent": "price_or_item", "entities": {"item": "ساندوتش كفتة"}}
+{"text": "متاح ساندوتش كفتة؟", "intent": "price_or_item", "entities": {"item": "ساندوتش كفتة"}}
+{"text": "عايز ساندوتش كفتة", "intent": "order", "entities": {"item": "ساندوتش كفتة", "quantity": 1}}
+{"text": "ضيف 2 ساندوتش كفتة", "intent": "order", "entities": {"item": "ساندوتش كفتة", "quantity": 2}}
+{"text": "مكونات ساندوتش كفتة ايه؟", "intent": "price_or_item", "entities": {"item": "ساندوتش كفتة"}}
+{"text": "ساندوتش سجق بلدي بكام؟", "intent": "price_or_item", "entities": {"item": "ساندوتش سجق بلدي"}}
+{"text": "متاح ساندوتش سجق بلدي؟", "intent": "price_or_item", "entities": {"item": "ساندوتش سجق بلدي"}}
+{"text": "عايز ساندوتش سجق بلدي", "intent": "order", "entities": {"item": "ساندوتش سجق بلدي", "quantity": 1}}
+{"text": "ضيف 2 ساندوتش سجق بلدي", "intent": "order", "entities": {"item": "ساندوتش سجق بلدي", "quantity": 2}}
+{"text": "مكونات ساندوتش سجق بلدي ايه؟", "intent": "price_or_item", "entities": {"item": "ساندوتش سجق بلدي"}}
+{"text": "ساندوتش فاهيتا فراخ بكام؟", "intent": "price_or_item", "entities": {"item": "ساندوتش فاهيتا فراخ"}}
+{"text": "متاح ساندوتش فاهيتا فراخ؟", "intent": "price_or_item", "entities": {"item": "ساندوتش فاهيتا فراخ"}}
+{"text": "عايز ساندوتش فاهيتا فراخ", "intent": "order", "entities": {"item": "ساندوتش فاهيتا فراخ", "quantity": 1}}
+{"text": "ضيف 2 ساندوتش فاهيتا فراخ", "intent": "order", "entities": {"item": "ساندوتش فاهيتا فراخ", "quantity": 2}}
+{"text": "مكونات ساندوتش فاهيتا فراخ ايه؟", "intent": "price_or_item", "entities": {"item": "ساندوتش فاهيتا فراخ"}}
+{"text": "ساندوتش حلومي مشوي بكام؟", "intent": "price_or_item", "entities": {"item": "ساندوتش حلومي مشوي"}}
+{"text": "متاح ساندوتش حلومي مشوي؟", "intent": "price_or_item", "entities": {"item": "ساندوتش حلومي مشوي"}}
+{"text": "عايز ساندوتش حلومي مشوي", "intent": "order", "entities": {"item": "ساندوتش حلومي مشوي", "quantity": 1}}
+{"text": "ضيف 2 ساندوتش حلومي مشوي", "intent": "order", "entities": {"item": "ساندوتش حلومي مشوي", "quantity": 2}}
+{"text": "مكونات ساندوتش حلومي مشوي ايه؟", "intent": "price_or_item", "entities": {"item": "ساندوتش حلومي مشوي"}}
+{"text": "ساندوتش فلافل بكام؟", "intent": "price_or_item", "entities": {"item": "ساندوتش فلافل"}}
+{"text": "متاح ساندوتش فلافل؟", "intent": "price_or_item", "entities": {"item": "ساندوتش فلافل"}}
+{"text": "عايز ساندوتش فلافل", "intent": "order", "entities": {"item": "ساندوتش فلافل", "quantity": 1}}
+{"text": "ضيف 2 ساندوتش فلافل", "intent": "order", "entities": {"item": "ساندوتش فلافل", "quantity": 2}}
+{"text": "مكونات ساندوتش فلافل ايه؟", "intent": "price_or_item", "entities": {"item": "ساندوتش فلافل"}}
+{"text": "ساندوتش بطاطس سوري بكام؟", "intent": "price_or_item", "entities": {"item": "ساندوتش بطاطس سوري"}}
+{"text": "متاح ساندوتش بطاطس سوري؟", "intent": "price_or_item", "entities": {"item": "ساندوتش بطاطس سوري"}}
+{"text": "عايز ساندوتش بطاطس سوري", "intent": "order", "entities": {"item": "ساندوتش بطاطس سوري", "quantity": 1}}
+{"text": "ضيف 2 ساندوتش بطاطس سوري", "intent": "order", "entities": {"item": "ساندوتش بطاطس سوري", "quantity": 2}}
+{"text": "مكونات ساندوتش بطاطس سوري ايه؟", "intent": "price_or_item", "entities": {"item": "ساندوتش بطاطس سوري"}}
+{"text": "نصف فرخة مشوية بكام؟", "intent": "price_or_item", "entities": {"item": "نصف فرخة مشوية"}}
+{"text": "متاح نصف فرخة مشوية؟", "intent": "price_or_item", "entities": {"item": "نصف فرخة مشوية"}}
+{"text": "عايز نصف فرخة مشوية", "intent": "order", "entities": {"item": "نصف فرخة مشوية", "quantity": 1}}
+{"text": "ضيف 2 نصف فرخة مشوية", "intent": "order", "entities": {"item": "نصف فرخة مشوية", "quantity": 2}}
+{"text": "مكونات نصف فرخة مشوية ايه؟", "intent": "price_or_item", "entities": {"item": "نصف فرخة مشوية"}}
+{"text": "فرخة مشوية كاملة بكام؟", "intent": "price_or_item", "entities": {"item": "فرخة مشوية كاملة"}}
+{"text": "متاح فرخة مشوية كاملة؟", "intent": "price_or_item", "entities": {"item": "فرخة مشوية كاملة"}}
+{"text": "عايز فرخة مشوية كاملة", "intent": "order", "entities": {"item": "فرخة مشوية كاملة", "quantity": 1}}
+{"text": "ضيف 2 فرخة مشوية كاملة", "intent": "order", "entities": {"item": "فرخة مشوية كاملة", "quantity": 2}}
+{"text": "مكونات فرخة مشوية كاملة ايه؟", "intent": "price_or_item", "entities": {"item": "فرخة مشوية كاملة"}}
+{"text": "كفتة مشوية بكام؟", "intent": "price_or_item", "entities": {"item": "كفتة مشوية"}}
+{"text": "متاح كفتة مشوية؟", "intent": "price_or_item", "entities": {"item": "كفتة مشوية"}}
+{"text": "عايز كفتة مشوية", "intent": "order", "entities": {"item": "كفتة مشوية", "quantity": 1}}
+{"text": "ضيف 2 كفتة مشوية", "intent": "order", "entities": {"item": "كفتة مشوية", "quantity": 2}}
+{"text": "مكونات كفتة مشوية ايه؟", "intent": "price_or_item", "entities": {"item": "كفتة مشوية"}}
+{"text": "كباب ضاني بكام؟", "intent": "price_or_item", "entities": {"item": "كباب ضاني"}}
+{"text": "متاح كباب ضاني؟", "intent": "price_or_item", "entities": {"item": "كباب ضاني"}}
+{"text": "عايز كباب ضاني", "intent": "order", "entities": {"item": "كباب ضاني", "quantity": 1}}
+{"text": "ضيف 2 كباب ضاني", "intent": "order", "entities": {"item": "كباب ضاني", "quantity": 2}}
+{"text": "مكونات كباب ضاني ايه؟", "intent": "price_or_item", "entities": {"item": "كباب ضاني"}}
+{"text": "طرب مشوي بكام؟", "intent": "price_or_item", "entities": {"item": "طرب مشوي"}}
+{"text": "متاح طرب مشوي؟", "intent": "price_or_item", "entities": {"item": "طرب مشوي"}}
+{"text": "عايز طرب مشوي", "intent": "order", "entities": {"item": "طرب مشوي", "quantity": 1}}
+{"text": "ضيف 2 طرب مشوي", "intent": "order", "entities": {"item": "طرب مشوي", "quantity": 2}}
+{"text": "مكونات طرب مشوي ايه؟", "intent": "price_or_item", "entities": {"item": "طرب مشوي"}}
+{"text": "ريش ضاني بكام؟", "intent": "price_or_item", "entities": {"item": "ريش ضاني"}}
+{"text": "متاح ريش ضاني؟", "intent": "price_or_item", "entities": {"item": "ريش ضاني"}}
+{"text": "عايز ريش ضاني", "intent": "order", "entities": {"item": "ريش ضاني", "quantity": 1}}
+{"text": "ضيف 2 ريش ضاني", "intent": "order", "entities": {"item": "ريش ضاني", "quantity": 2}}
+{"text": "مكونات ريش ضاني ايه؟", "intent": "price_or_item", "entities": {"item": "ريش ضاني"}}
+{"text": "شيش طاووق بكام؟", "intent": "price_or_item", "entities": {"item": "شيش طاووق"}}
+{"text": "متاح شيش طاووق؟", "intent": "price_or_item", "entities": {"item": "شيش طاووق"}}
+{"text": "عايز شيش طاووق", "intent": "order", "entities": {"item": "شيش طاووق", "quantity": 1}}
+{"text": "ضيف 2 شيش طاووق", "intent": "order", "entities": {"item": "شيش طاووق", "quantity": 2}}
+{"text": "مكونات شيش طاووق ايه؟", "intent": "price_or_item", "entities": {"item": "شيش طاووق"}}
+{"text": "ميكس جريل فردي بكام؟", "intent": "price_or_item", "entities": {"item": "ميكس جريل فردي"}}
+{"text": "متاح ميكس جريل فردي؟", "intent": "price_or_item", "entities": {"item": "ميكس جريل فردي"}}
+{"text": "عايز ميكس جريل فردي", "intent": "order", "entities": {"item": "ميكس جريل فردي", "quantity": 1}}
+{"text": "ضيف 2 ميكس جريل فردي", "intent": "order", "entities": {"item": "ميكس جريل فردي", "quantity": 2}}
+{"text": "مكونات ميكس جريل فردي ايه؟", "intent": "price_or_item", "entities": {"item": "ميكس جريل فردي"}}
+{"text": "ميكس جريل عائلي بكام؟", "intent": "price_or_item", "entities": {"item": "ميكس جريل عائلي"}}
+{"text": "متاح ميكس جريل عائلي؟", "intent": "price_or_item", "entities": {"item": "ميكس جريل عائلي"}}
+{"text": "عايز ميكس جريل عائلي", "intent": "order", "entities": {"item": "ميكس جريل عائلي", "quantity": 1}}
+{"text": "ضيف 2 ميكس جريل عائلي", "intent": "order", "entities": {"item": "ميكس جريل عائلي", "quantity": 2}}
+{"text": "مكونات ميكس جريل عائلي ايه؟", "intent": "price_or_item", "entities": {"item": "ميكس جريل عائلي"}}
+{"text": "حمام محشي بكام؟", "intent": "price_or_item", "entities": {"item": "حمام محشي"}}
+{"text": "متاح حمام محشي؟", "intent": "price_or_item", "entities": {"item": "حمام محشي"}}
+{"text": "عايز حمام محشي", "intent": "order", "entities": {"item": "حمام محشي", "quantity": 1}}
+{"text": "ضيف 2 حمام محشي", "intent": "order", "entities": {"item": "حمام محشي", "quantity": 2}}
+{"text": "مكونات حمام محشي ايه؟", "intent": "price_or_item", "entities": {"item": "حمام محشي"}}
+{"text": "ملوخية بالفراخ بكام؟", "intent": "price_or_item", "entities": {"item": "ملوخية بالفراخ"}}
+{"text": "متاح ملوخية بالفراخ؟", "intent": "price_or_item", "entities": {"item": "ملوخية بالفراخ"}}
+{"text": "عايز ملوخية بالفراخ", "intent": "order", "entities": {"item": "ملوخية بالفراخ", "quantity": 1}}
+{"text": "ضيف 2 ملوخية بالفراخ", "intent": "order", "entities": {"item": "ملوخية بالفراخ", "quantity": 2}}
+{"text": "مكونات ملوخية بالفراخ ايه؟", "intent": "price_or_item", "entities": {"item": "ملوخية بالفراخ"}}
+{"text": "فتة موزة ضاني بكام؟", "intent": "price_or_item", "entities": {"item": "فتة موزة ضاني"}}
+{"text": "متاح فتة موزة ضاني؟", "intent": "price_or_item", "entities": {"item": "فتة موزة ضاني"}}
+{"text": "عايز فتة موزة ضاني", "intent": "order", "entities": {"item": "فتة موزة ضاني", "quantity": 1}}
+{"text": "ضيف 2 فتة موزة ضاني", "intent": "order", "entities": {"item": "فتة موزة ضاني", "quantity": 2}}
+{"text": "مكونات فتة موزة ضاني ايه؟", "intent": "price_or_item", "entities": {"item": "فتة موزة ضاني"}}
+{"text": "مسقعة نباتي بكام؟", "intent": "price_or_item", "entities": {"item": "مسقعة نباتي"}}
+{"text": "متاح مسقعة نباتي؟", "intent": "price_or_item", "entities": {"item": "مسقعة نباتي"}}
+{"text": "عايز مسقعة نباتي", "intent": "order", "entities": {"item": "مسقعة نباتي", "quantity": 1}}
+{"text": "ضيف 2 مسقعة نباتي", "intent": "order", "entities": {"item": "مسقعة نباتي", "quantity": 2}}
+{"text": "مكونات مسقعة نباتي ايه؟", "intent": "price_or_item", "entities": {"item": "مسقعة نباتي"}}
+{"text": "طاجن بامية باللحمة بكام؟", "intent": "price_or_item", "entities": {"item": "طاجن بامية باللحمة"}}
+{"text": "متاح طاجن بامية باللحمة؟", "intent": "price_or_item", "entities": {"item": "طاجن بامية باللحمة"}}
+{"text": "عايز طاجن بامية باللحمة", "intent": "order", "entities": {"item": "طاجن بامية باللحمة", "quantity": 1}}
+{"text": "ضيف 2 طاجن بامية باللحمة", "intent": "order", "entities": {"item": "طاجن بامية باللحمة", "quantity": 2}}
+{"text": "مكونات طاجن بامية باللحمة ايه؟", "intent": "price_or_item", "entities": {"item": "طاجن بامية باللحمة"}}
+{"text": "طاجن ورق عنب بالكوارع بكام؟", "intent": "price_or_item", "entities": {"item": "طاجن ورق عنب بالكوارع"}}
+{"text": "متاح طاجن ورق عنب بالكوارع؟", "intent": "price_or_item", "entities": {"item": "طاجن ورق عنب بالكوارع"}}
+{"text": "عايز طاجن ورق عنب بالكوارع", "intent": "order", "entities": {"item": "طاجن ورق عنب بالكوارع", "quantity": 1}}
+{"text": "ضيف 2 طاجن ورق عنب بالكوارع", "intent": "order", "entities": {"item": "طاجن ورق عنب بالكوارع", "quantity": 2}}
+{"text": "مكونات طاجن ورق عنب بالكوارع ايه؟", "intent": "price_or_item", "entities": {"item": "طاجن ورق عنب بالكوارع"}}
+{"text": "طاجن عكاوي بكام؟", "intent": "price_or_item", "entities": {"item": "طاجن عكاوي"}}
+{"text": "متاح طاجن عكاوي؟", "intent": "price_or_item", "entities": {"item": "طاجن عكاوي"}}
+{"text": "عايز طاجن عكاوي", "intent": "order", "entities": {"item": "طاجن عكاوي", "quantity": 1}}
+{"text": "ضيف 2 طاجن عكاوي", "intent": "order", "entities": {"item": "طاجن عكاوي", "quantity": 2}}
+{"text": "مكونات طاجن عكاوي ايه؟", "intent": "price_or_item", "entities": {"item": "طاجن عكاوي"}}
+{"text": "فراخ بانيه بكام؟", "intent": "price_or_item", "entities": {"item": "فراخ بانيه"}}
+{"text": "متاح فراخ بانيه؟", "intent": "price_or_item", "entities": {"item": "فراخ بانيه"}}
+{"text": "عايز فراخ بانيه", "intent": "order", "entities": {"item": "فراخ بانيه", "quantity": 1}}
+{"text": "ضيف 2 فراخ بانيه", "intent": "order", "entities": {"item": "فراخ بانيه", "quantity": 2}}
+{"text": "مكونات فراخ بانيه ايه؟", "intent": "price_or_item", "entities": {"item": "فراخ بانيه"}}
+{"text": "بيكاتا مشروم بكام؟", "intent": "price_or_item", "entities": {"item": "بيكاتا مشروم"}}
+{"text": "متاح بيكاتا مشروم؟", "intent": "price_or_item", "entities": {"item": "بيكاتا مشروم"}}
+{"text": "عايز بيكاتا مشروم", "intent": "order", "entities": {"item": "بيكاتا مشروم", "quantity": 1}}
+{"text": "ضيف 2 بيكاتا مشروم", "intent": "order", "entities": {"item": "بيكاتا مشروم", "quantity": 2}}
+{"text": "مكونات بيكاتا مشروم ايه؟", "intent": "price_or_item", "entities": {"item": "بيكاتا مشروم"}}
+{"text": "سويت أند ساور تشيكن بكام؟", "intent": "price_or_item", "entities": {"item": "سويت أند ساور تشيكن"}}
+{"text": "متاح سويت أند ساور تشيكن؟", "intent": "price_or_item", "entities": {"item": "سويت أند ساور تشيكن"}}
+{"text": "عايز سويت أند ساور تشيكن", "intent": "order", "entities": {"item": "سويت أند ساور تشيكن", "quantity": 1}}
+{"text": "ضيف 2 سويت أند ساور تشيكن", "intent": "order", "entities": {"item": "سويت أند ساور تشيكن", "quantity": 2}}
+{"text": "مكونات سويت أند ساور تشيكن ايه؟", "intent": "price_or_item", "entities": {"item": "سويت أند ساور تشيكن"}}
+{"text": "ستيك مشوي بكام؟", "intent": "price_or_item", "entities": {"item": "ستيك مشوي"}}
+{"text": "متاح ستيك مشوي؟", "intent": "price_or_item", "entities": {"item": "ستيك مشوي"}}
+{"text": "عايز ستيك مشوي", "intent": "order", "entities": {"item": "ستيك مشوي", "quantity": 1}}
+{"text": "ضيف 2 ستيك مشوي", "intent": "order", "entities": {"item": "ستيك مشوي", "quantity": 2}}
+{"text": "مكونات ستيك مشوي ايه؟", "intent": "price_or_item", "entities": {"item": "ستيك مشوي"}}
+{"text": "باستا ألفريدو فراخ بكام؟", "intent": "price_or_item", "entities": {"item": "باستا ألفريدو فراخ"}}
+{"text": "متاح باستا ألفريدو فراخ؟", "intent": "price_or_item", "entities": {"item": "باستا ألفريدو فراخ"}}
+{"text": "عايز باستا ألفريدو فراخ", "intent": "order", "entities": {"item": "باستا ألفريدو فراخ", "quantity": 1}}
+{"text": "ضيف 2 باستا ألفريدو فراخ", "intent": "order", "entities": {"item": "باستا ألفريدو فراخ", "quantity": 2}}
+{"text": "مكونات باستا ألفريدو فراخ ايه؟", "intent": "price_or_item", "entities": {"item": "باستا ألفريدو فراخ"}}
+{"text": "باستا سي فود بكام؟", "intent": "price_or_item", "entities": {"item": "باستا سي فود"}}
+{"text": "متاح باستا سي فود؟", "intent": "price_or_item", "entities": {"item": "باستا سي فود"}}
+{"text": "عايز باستا سي فود", "intent": "order", "entities": {"item": "باستا سي فود", "quantity": 1}}
+{"text": "ضيف 2 باستا سي فود", "intent": "order", "entities": {"item": "باستا سي فود", "quantity": 2}}
+{"text": "مكونات باستا سي فود ايه؟", "intent": "price_or_item", "entities": {"item": "باستا سي فود"}}
+{"text": "باستا أرابياتا بكام؟", "intent": "price_or_item", "entities": {"item": "باستا أرابياتا"}}
+{"text": "متاح باستا أرابياتا؟", "intent": "price_or_item", "entities": {"item": "باستا أرابياتا"}}
+{"text": "عايز باستا أرابياتا", "intent": "order", "entities": {"item": "باستا أرابياتا", "quantity": 1}}
+{"text": "ضيف 2 باستا أرابياتا", "intent": "order", "entities": {"item": "باستا أرابياتا", "quantity": 2}}
+{"text": "مكونات باستا أرابياتا ايه؟", "intent": "price_or_item", "entities": {"item": "باستا أرابياتا"}}
+{"text": "باستا بولونيز بكام؟", "intent": "price_or_item", "entities": {"item": "باستا بولونيز"}}
+{"text": "متاح باستا بولونيز؟", "intent": "price_or_item", "entities": {"item": "باستا بولونيز"}}
+{"text": "عايز باستا بولونيز", "intent": "order", "entities": {"item": "باستا بولونيز", "quantity": 1}}
+{"text": "ضيف 2 باستا بولونيز", "intent": "order", "entities": {"item": "باستا بولونيز", "quantity": 2}}
+{"text": "مكونات باستا بولونيز ايه؟", "intent": "price_or_item", "entities": {"item": "باستا بولونيز"}}
+{"text": "لازانيا بكام؟", "intent": "price_or_item", "entities": {"item": "لازانيا"}}
+{"text": "متاح لازانيا؟", "intent": "price_or_item", "entities": {"item": "لازانيا"}}
+{"text": "عايز لازانيا", "intent": "order", "entities": {"item": "لازانيا", "quantity": 1}}
+{"text": "ضيف 2 لازانيا", "intent": "order", "entities": {"item": "لازانيا", "quantity": 2}}
+{"text": "مكونات لازانيا ايه؟", "intent": "price_or_item", "entities": {"item": "لازانيا"}}
+{"text": "نجرسكو فراخ بكام؟", "intent": "price_or_item", "entities": {"item": "نجرسكو فراخ"}}
+{"text": "متاح نجرسكو فراخ؟", "intent": "price_or_item", "entities": {"item": "نجرسكو فراخ"}}
+{"text": "عايز نجرسكو فراخ", "intent": "order", "entities": {"item": "نجرسكو فراخ", "quantity": 1}}
+{"text": "ضيف 2 نجرسكو فراخ", "intent": "order", "entities": {"item": "نجرسكو فراخ", "quantity": 2}}
+{"text": "مكونات نجرسكو فراخ ايه؟", "intent": "price_or_item", "entities": {"item": "نجرسكو فراخ"}}
+{"text": "باستا بيستو بكام؟", "intent": "price_or_item", "entities": {"item": "باستا بيستو"}}
+{"text": "متاح باستا بيستو؟", "intent": "price_or_item", "entities": {"item": "باستا بيستو"}}
+{"text": "عايز باستا بيستو", "intent": "order", "entities": {"item": "باستا بيستو", "quantity": 1}}
+{"text": "ضيف 2 باستا بيستو", "intent": "order", "entities": {"item": "باستا بيستو", "quantity": 2}}
+{"text": "مكونات باستا بيستو ايه؟", "intent": "price_or_item", "entities": {"item": "باستا بيستو"}}
+{"text": "ماك آند تشيز بكام؟", "intent": "price_or_item", "entities": {"item": "ماك آند تشيز"}}
+{"text": "متاح ماك آند تشيز؟", "intent": "price_or_item", "entities": {"item": "ماك آند تشيز"}}
+{"text": "عايز ماك آند تشيز", "intent": "order", "entities": {"item": "ماك آند تشيز", "quantity": 1}}
+{"text": "ضيف 2 ماك آند تشيز", "intent": "order", "entities": {"item": "ماك آند تشيز", "quantity": 2}}
+{"text": "مكونات ماك آند تشيز ايه؟", "intent": "price_or_item", "entities": {"item": "ماك آند تشيز"}}
+{"text": "بيتزا مارجريتا بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا مارجريتا"}}
+{"text": "متاح بيتزا مارجريتا؟", "intent": "price_or_item", "entities": {"item": "بيتزا مارجريتا"}}
+{"text": "عايز بيتزا مارجريتا", "intent": "order", "entities": {"item": "بيتزا مارجريتا", "quantity": 1}}
+{"text": "ضيف 2 بيتزا مارجريتا", "intent": "order", "entities": {"item": "بيتزا مارجريتا", "quantity": 2}}
+{"text": "مكونات بيتزا مارجريتا ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا مارجريتا"}}
+{"text": "بيتزا بيبروني بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا بيبروني"}}
+{"text": "متاح بيتزا بيبروني؟", "intent": "price_or_item", "entities": {"item": "بيتزا بيبروني"}}
+{"text": "عايز بيتزا بيبروني", "intent": "order", "entities": {"item": "بيتزا بيبروني", "quantity": 1}}
+{"text": "ضيف 2 بيتزا بيبروني", "intent": "order", "entities": {"item": "بيتزا بيبروني", "quantity": 2}}
+{"text": "مكونات بيتزا بيبروني ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا بيبروني"}}
+{"text": "بيتزا فراخ باربكيو بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا فراخ باربكيو"}}
+{"text": "متاح بيتزا فراخ باربكيو؟", "intent": "price_or_item", "entities": {"item": "بيتزا فراخ باربكيو"}}
+{"text": "عايز بيتزا فراخ باربكيو", "intent": "order", "entities": {"item": "بيتزا فراخ باربكيو", "quantity": 1}}
+{"text": "ضيف 2 بيتزا فراخ باربكيو", "intent": "order", "entities": {"item": "بيتزا فراخ باربكيو", "quantity": 2}}
+{"text": "مكونات بيتزا فراخ باربكيو ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا فراخ باربكيو"}}
+{"text": "بيتزا سي فود بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا سي فود"}}
+{"text": "متاح بيتزا سي فود؟", "intent": "price_or_item", "entities": {"item": "بيتزا سي فود"}}
+{"text": "عايز بيتزا سي فود", "intent": "order", "entities": {"item": "بيتزا سي فود", "quantity": 1}}
+{"text": "ضيف 2 بيتزا سي فود", "intent": "order", "entities": {"item": "بيتزا سي فود", "quantity": 2}}
+{"text": "مكونات بيتزا سي فود ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا سي فود"}}
+{"text": "بيتزا خضار بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا خضار"}}
+{"text": "متاح بيتزا خضار؟", "intent": "price_or_item", "entities": {"item": "بيتزا خضار"}}
+{"text": "عايز بيتزا خضار", "intent": "order", "entities": {"item": "بيتزا خضار", "quantity": 1}}
+{"text": "ضيف 2 بيتزا خضار", "intent": "order", "entities": {"item": "بيتزا خضار", "quantity": 2}}
+{"text": "مكونات بيتزا خضار ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا خضار"}}
+{"text": "بيتزا فور تشيز بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا فور تشيز"}}
+{"text": "متاح بيتزا فور تشيز؟", "intent": "price_or_item", "entities": {"item": "بيتزا فور تشيز"}}
+{"text": "عايز بيتزا فور تشيز", "intent": "order", "entities": {"item": "بيتزا فور تشيز", "quantity": 1}}
+{"text": "ضيف 2 بيتزا فور تشيز", "intent": "order", "entities": {"item": "بيتزا فور تشيز", "quantity": 2}}
+{"text": "مكونات بيتزا فور تشيز ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا فور تشيز"}}
+{"text": "بيتزا سجق بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا سجق"}}
+{"text": "متاح بيتزا سجق؟", "intent": "price_or_item", "entities": {"item": "بيتزا سجق"}}
+{"text": "عايز بيتزا سجق", "intent": "order", "entities": {"item": "بيتزا سجق", "quantity": 1}}
+{"text": "ضيف 2 بيتزا سجق", "intent": "order", "entities": {"item": "بيتزا سجق", "quantity": 2}}
+{"text": "مكونات بيتزا سجق ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا سجق"}}
+{"text": "بيتزا رومي مدخن بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا رومي مدخن"}}
+{"text": "متاح بيتزا رومي مدخن؟", "intent": "price_or_item", "entities": {"item": "بيتزا رومي مدخن"}}
+{"text": "عايز بيتزا رومي مدخن", "intent": "order", "entities": {"item": "بيتزا رومي مدخن", "quantity": 1}}
+{"text": "ضيف 2 بيتزا رومي مدخن", "intent": "order", "entities": {"item": "بيتزا رومي مدخن", "quantity": 2}}
+{"text": "مكونات بيتزا رومي مدخن ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا رومي مدخن"}}
+{"text": "جمبري مشوي بكام؟", "intent": "price_or_item", "entities": {"item": "جمبري مشوي"}}
+{"text": "متاح جمبري مشوي؟", "intent": "price_or_item", "entities": {"item": "جمبري مشوي"}}
+{"text": "عايز جمبري مشوي", "intent": "order", "entities": {"item": "جمبري مشوي", "quantity": 1}}
+{"text": "ضيف 2 جمبري مشوي", "intent": "order", "entities": {"item": "جمبري مشوي", "quantity": 2}}
+{"text": "مكونات جمبري مشوي ايه؟", "intent": "price_or_item", "entities": {"item": "جمبري مشوي"}}
+{"text": "جمبري مقلي بكام؟", "intent": "price_or_item", "entities": {"item": "جمبري مقلي"}}
+{"text": "متاح جمبري مقلي؟", "intent": "price_or_item", "entities": {"item": "جمبري مقلي"}}
+{"text": "عايز جمبري مقلي", "intent": "order", "entities": {"item": "جمبري مقلي", "quantity": 1}}
+{"text": "ضيف 2 جمبري مقلي", "intent": "order", "entities": {"item": "جمبري مقلي", "quantity": 2}}
+{"text": "مكونات جمبري مقلي ايه؟", "intent": "price_or_item", "entities": {"item": "جمبري مقلي"}}
+{"text": "كاليماري مقلي بكام؟", "intent": "price_or_item", "entities": {"item": "كاليماري مقلي"}}
+{"text": "متاح كاليماري مقلي؟", "intent": "price_or_item", "entities": {"item": "كاليماري مقلي"}}
+{"text": "عايز كاليماري مقلي", "intent": "order", "entities": {"item": "كاليماري مقلي", "quantity": 1}}
+{"text": "ضيف 2 كاليماري مقلي", "intent": "order", "entities": {"item": "كاليماري مقلي", "quantity": 2}}
+{"text": "مكونات كاليماري مقلي ايه؟", "intent": "price_or_item", "entities": {"item": "كاليماري مقلي"}}
+{"text": "فيليه سمك مشوي بكام؟", "intent": "price_or_item", "entities": {"item": "فيليه سمك مشوي"}}
+{"text": "متاح فيليه سمك مشوي؟", "intent": "price_or_item", "entities": {"item": "فيليه سمك مشوي"}}
+{"text": "عايز فيليه سمك مشوي", "intent": "order", "entities": {"item": "فيليه سمك مشوي", "quantity": 1}}
+{"text": "ضيف 2 فيليه سمك مشوي", "intent": "order", "entities": {"item": "فيليه سمك مشوي", "quantity": 2}}
+{"text": "مكونات فيليه سمك مشوي ايه؟", "intent": "price_or_item", "entities": {"item": "فيليه سمك مشوي"}}
+{"text": "طاجن سي فود بكام؟", "intent": "price_or_item", "entities": {"item": "طاجن سي فود"}}
+{"text": "متاح طاجن سي فود؟", "intent": "price_or_item", "entities": {"item": "طاجن سي فود"}}
+{"text": "عايز طاجن سي فود", "intent": "order", "entities": {"item": "طاجن سي فود", "quantity": 1}}
+{"text": "ضيف 2 طاجن سي فود", "intent": "order", "entities": {"item": "طاجن سي فود", "quantity": 2}}
+{"text": "مكونات طاجن سي فود ايه؟", "intent": "price_or_item", "entities": {"item": "طاجن سي فود"}}
+{"text": "سمك سنجاري بكام؟", "intent": "price_or_item", "entities": {"item": "سمك سنجاري"}}
+{"text": "متاح سمك سنجاري؟", "intent": "price_or_item", "entities": {"item": "سمك سنجاري"}}
+{"text": "عايز سمك سنجاري", "intent": "order", "entities": {"item": "سمك سنجاري", "quantity": 1}}
+{"text": "ضيف 2 سمك سنجاري", "intent": "order", "entities": {"item": "سمك سنجاري", "quantity": 2}}
+{"text": "مكونات سمك سنجاري ايه؟", "intent": "price_or_item", "entities": {"item": "سمك سنجاري"}}
+{"text": "أرز صيادية بكام؟", "intent": "price_or_item", "entities": {"item": "أرز صيادية"}}
+{"text": "متاح أرز صيادية؟", "intent": "price_or_item", "entities": {"item": "أرز صيادية"}}
+{"text": "عايز أرز صيادية", "intent": "order", "entities": {"item": "أرز صيادية", "quantity": 1}}
+{"text": "ضيف 2 أرز صيادية", "intent": "order", "entities": {"item": "أرز صيادية", "quantity": 2}}
+{"text": "مكونات أرز صيادية ايه؟", "intent": "price_or_item", "entities": {"item": "أرز صيادية"}}
+{"text": "شوربة جمبري حارة بكام؟", "intent": "price_or_item", "entities": {"item": "شوربة جمبري حارة"}}
+{"text": "متاح شوربة جمبري حارة؟", "intent": "price_or_item", "entities": {"item": "شوربة جمبري حارة"}}
+{"text": "عايز شوربة جمبري حارة", "intent": "order", "entities": {"item": "شوربة جمبري حارة", "quantity": 1}}
+{"text": "ضيف 2 شوربة جمبري حارة", "intent": "order", "entities": {"item": "شوربة جمبري حارة", "quantity": 2}}
+{"text": "مكونات شوربة جمبري حارة ايه؟", "intent": "price_or_item", "entities": {"item": "شوربة جمبري حارة"}}
+{"text": "فول إسكندراني بكام؟", "intent": "price_or_item", "entities": {"item": "فول إسكندراني"}}
+{"text": "متاح فول إسكندراني؟", "intent": "price_or_item", "entities": {"item": "فول إسكندراني"}}
+{"text": "عايز فول إسكندراني", "intent": "order", "entities": {"item": "فول إسكندراني", "quantity": 1}}
+{"text": "ضيف 2 فول إسكندراني", "intent": "order", "entities": {"item": "فول إسكندراني", "quantity": 2}}
+{"text": "مكونات فول إسكندراني ايه؟", "intent": "price_or_item", "entities": {"item": "فول إسكندراني"}}
+{"text": "فول بالزبدة بكام؟", "intent": "price_or_item", "entities": {"item": "فول بالزبدة"}}
+{"text": "متاح فول بالزبدة؟", "intent": "price_or_item", "entities": {"item": "فول بالزبدة"}}
+{"text": "عايز فول بالزبدة", "intent": "order", "entities": {"item": "فول بالزبدة", "quantity": 1}}
+{"text": "ضيف 2 فول بالزبدة", "intent": "order", "entities": {"item": "فول بالزبدة", "quantity": 2}}
+{"text": "مكونات فول بالزبدة ايه؟", "intent": "price_or_item", "entities": {"item": "فول بالزبدة"}}
+{"text": "طعمية بكام؟", "intent": "price_or_item", "entities": {"item": "طعمية"}}
+{"text": "متاح طعمية؟", "intent": "price_or_item", "entities": {"item": "طعمية"}}
+{"text": "عايز طعمية", "intent": "order", "entities": {"item": "طعمية", "quantity": 1}}
+{"text": "ضيف 2 طعمية", "intent": "order", "entities": {"item": "طعمية", "quantity": 2}}
+{"text": "مكونات طعمية ايه؟", "intent": "price_or_item", "entities": {"item": "طعمية"}}
+{"text": "بيض عيون بكام؟", "intent": "price_or_item", "entities": {"item": "بيض عيون"}}
+{"text": "متاح بيض عيون؟", "intent": "price_or_item", "entities": {"item": "بيض عيون"}}
+{"text": "عايز بيض عيون", "intent": "order", "entities": {"item": "بيض عيون", "quantity": 1}}
+{"text": "ضيف 2 بيض عيون", "intent": "order", "entities": {"item": "بيض عيون", "quantity": 2}}
+{"text": "مكونات بيض عيون ايه؟", "intent": "price_or_item", "entities": {"item": "بيض عيون"}}
+{"text": "أومليت جبنة بكام؟", "intent": "price_or_item", "entities": {"item": "أومليت جبنة"}}
+{"text": "متاح أومليت جبنة؟", "intent": "price_or_item", "entities": {"item": "أومليت جبنة"}}
+{"text": "عايز أومليت جبنة", "intent": "order", "entities": {"item": "أومليت جبنة", "quantity": 1}}
+{"text": "ضيف 2 أومليت جبنة", "intent": "order", "entities": {"item": "أومليت جبنة", "quantity": 2}}
+{"text": "مكونات أومليت جبنة ايه؟", "intent": "price_or_item", "entities": {"item": "أومليت جبنة"}}
+{"text": "شكشوكة بكام؟", "intent": "price_or_item", "entities": {"item": "شكشوكة"}}
+{"text": "متاح شكشوكة؟", "intent": "price_or_item", "entities": {"item": "شكشوكة"}}
+{"text": "عايز شكشوكة", "intent": "order", "entities": {"item": "شكشوكة", "quantity": 1}}
+{"text": "ضيف 2 شكشوكة", "intent": "order", "entities": {"item": "شكشوكة", "quantity": 2}}
+{"text": "مكونات شكشوكة ايه؟", "intent": "price_or_item", "entities": {"item": "شكشوكة"}}
+{"text": "بطاطس بالبيض بكام؟", "intent": "price_or_item", "entities": {"item": "بطاطس بالبيض"}}
+{"text": "متاح بطاطس بالبيض؟", "intent": "price_or_item", "entities": {"item": "بطاطس بالبيض"}}
+{"text": "عايز بطاطس بالبيض", "intent": "order", "entities": {"item": "بطاطس بالبيض", "quantity": 1}}
+{"text": "ضيف 2 بطاطس بالبيض", "intent": "order", "entities": {"item": "بطاطس بالبيض", "quantity": 2}}
+{"text": "مكونات بطاطس بالبيض ايه؟", "intent": "price_or_item", "entities": {"item": "بطاطس بالبيض"}}
+{"text": "طبق فطار شرقي بكام؟", "intent": "price_or_item", "entities": {"item": "طبق فطار شرقي"}}
+{"text": "متاح طبق فطار شرقي؟", "intent": "price_or_item", "entities": {"item": "طبق فطار شرقي"}}
+{"text": "عايز طبق فطار شرقي", "intent": "order", "entities": {"item": "طبق فطار شرقي", "quantity": 1}}
+{"text": "ضيف 2 طبق فطار شرقي", "intent": "order", "entities": {"item": "طبق فطار شرقي", "quantity": 2}}
+{"text": "مكونات طبق فطار شرقي ايه؟", "intent": "price_or_item", "entities": {"item": "طبق فطار شرقي"}}
+{"text": "كيدز ناجتس بكام؟", "intent": "price_or_item", "entities": {"item": "كيدز ناجتس"}}
+{"text": "متاح كيدز ناجتس؟", "intent": "price_or_item", "entities": {"item": "كيدز ناجتس"}}
+{"text": "عايز كيدز ناجتس", "intent": "order", "entities": {"item": "كيدز ناجتس", "quantity": 1}}
+{"text": "ضيف 2 كيدز ناجتس", "intent": "order", "entities": {"item": "كيدز ناجتس", "quantity": 2}}
+{"text": "مكونات كيدز ناجتس ايه؟", "intent": "price_or_item", "entities": {"item": "كيدز ناجتس"}}
+{"text": "كيدز برجر بكام؟", "intent": "price_or_item", "entities": {"item": "كيدز برجر"}}
+{"text": "متاح كيدز برجر؟", "intent": "price_or_item", "entities": {"item": "كيدز برجر"}}
+{"text": "عايز كيدز برجر", "intent": "order", "entities": {"item": "كيدز برجر", "quantity": 1}}
+{"text": "ضيف 2 كيدز برجر", "intent": "order", "entities": {"item": "كيدز برجر", "quantity": 2}}
+{"text": "مكونات كيدز برجر ايه؟", "intent": "price_or_item", "entities": {"item": "كيدز برجر"}}
+{"text": "مكرونة أطفال بكام؟", "intent": "price_or_item", "entities": {"item": "مكرونة أطفال"}}
+{"text": "متاح مكرونة أطفال؟", "intent": "price_or_item", "entities": {"item": "مكرونة أطفال"}}
+{"text": "عايز مكرونة أطفال", "intent": "order", "entities": {"item": "مكرونة أطفال", "quantity": 1}}
+{"text": "ضيف 2 مكرونة أطفال", "intent": "order", "entities": {"item": "مكرونة أطفال", "quantity": 2}}
+{"text": "مكونات مكرونة أطفال ايه؟", "intent": "price_or_item", "entities": {"item": "مكرونة أطفال"}}
+{"text": "بيتزا أطفال بكام؟", "intent": "price_or_item", "entities": {"item": "بيتزا أطفال"}}
+{"text": "متاح بيتزا أطفال؟", "intent": "price_or_item", "entities": {"item": "بيتزا أطفال"}}
+{"text": "عايز بيتزا أطفال", "intent": "order", "entities": {"item": "بيتزا أطفال", "quantity": 1}}
+{"text": "ضيف 2 بيتزا أطفال", "intent": "order", "entities": {"item": "بيتزا أطفال", "quantity": 2}}
+{"text": "مكونات بيتزا أطفال ايه؟", "intent": "price_or_item", "entities": {"item": "بيتزا أطفال"}}
+{"text": "فراخ مشوية أطفال بكام؟", "intent": "price_or_item", "entities": {"item": "فراخ مشوية أطفال"}}
+{"text": "متاح فراخ مشوية أطفال؟", "intent": "price_or_item", "entities": {"item": "فراخ مشوية أطفال"}}
+{"text": "عايز فراخ مشوية أطفال", "intent": "order", "entities": {"item": "فراخ مشوية أطفال", "quantity": 1}}
+{"text": "ضيف 2 فراخ مشوية أطفال", "intent": "order", "entities": {"item": "فراخ مشوية أطفال", "quantity": 2}}
+{"text": "مكونات فراخ مشوية أطفال ايه؟", "intent": "price_or_item", "entities": {"item": "فراخ مشوية أطفال"}}
+{"text": "كنافة بالقشطة بكام؟", "intent": "price_or_item", "entities": {"item": "كنافة بالقشطة"}}
+{"text": "متاح كنافة بالقشطة؟", "intent": "price_or_item", "entities": {"item": "كنافة بالقشطة"}}
+{"text": "عايز كنافة بالقشطة", "intent": "order", "entities": {"item": "كنافة بالقشطة", "quantity": 1}}
+{"text": "ضيف 2 كنافة بالقشطة", "intent": "order", "entities": {"item": "كنافة بالقشطة", "quantity": 2}}
+{"text": "مكونات كنافة بالقشطة ايه؟", "intent": "price_or_item", "entities": {"item": "كنافة بالقشطة"}}
+{"text": "أم علي بكام؟", "intent": "price_or_item", "entities": {"item": "أم علي"}}
+{"text": "متاح أم علي؟", "intent": "price_or_item", "entities": {"item": "أم علي"}}
+{"text": "عايز أم علي", "intent": "order", "entities": {"item": "أم علي", "quantity": 1}}
+{"text": "ضيف 2 أم علي", "intent": "order", "entities": {"item": "أم علي", "quantity": 2}}
+{"text": "مكونات أم علي ايه؟", "intent": "price_or_item", "entities": {"item": "أم علي"}}
+{"text": "مولتن كيك بكام؟", "intent": "price_or_item", "entities": {"item": "مولتن كيك"}}
+{"text": "متاح مولتن كيك؟", "intent": "price_or_item", "entities": {"item": "مولتن كيك"}}
+{"text": "عايز مولتن كيك", "intent": "order", "entities": {"item": "مولتن كيك", "quantity": 1}}
+{"text": "ضيف 2 مولتن كيك", "intent": "order", "entities": {"item": "مولتن كيك", "quantity": 2}}
+{"text": "مكونات مولتن كيك ايه؟", "intent": "price_or_item", "entities": {"item": "مولتن كيك"}}
+{"text": "تشيز كيك بكام؟", "intent": "price_or_item", "entities": {"item": "تشيز كيك"}}
+{"text": "متاح تشيز كيك؟", "intent": "price_or_item", "entities": {"item": "تشيز كيك"}}
+{"text": "عايز تشيز كيك", "intent": "order", "entities": {"item": "تشيز كيك", "quantity": 1}}
+{"text": "ضيف 2 تشيز كيك", "intent": "order", "entities": {"item": "تشيز كيك", "quantity": 2}}
+{"text": "مكونات تشيز كيك ايه؟", "intent": "price_or_item", "entities": {"item": "تشيز كيك"}}
+{"text": "رز بلبن بكام؟", "intent": "price_or_item", "entities": {"item": "رز بلبن"}}
+{"text": "متاح رز بلبن؟", "intent": "price_or_item", "entities": {"item": "رز بلبن"}}
+{"text": "عايز رز بلبن", "intent": "order", "entities": {"item": "رز بلبن", "quantity": 1}}
+{"text": "ضيف 2 رز بلبن", "intent": "order", "entities": {"item": "رز بلبن", "quantity": 2}}
+{"text": "مكونات رز بلبن ايه؟", "intent": "price_or_item", "entities": {"item": "رز بلبن"}}
+{"text": "براونيز بكام؟", "intent": "price_or_item", "entities": {"item": "براونيز"}}
+{"text": "متاح براونيز؟", "intent": "price_or_item", "entities": {"item": "براونيز"}}
+{"text": "عايز براونيز", "intent": "order", "entities": {"item": "براونيز", "quantity": 1}}
+{"text": "ضيف 2 براونيز", "intent": "order", "entities": {"item": "براونيز", "quantity": 2}}
+{"text": "مكونات براونيز ايه؟", "intent": "price_or_item", "entities": {"item": "براونيز"}}
+{"text": "وافل نوتيلا بكام؟", "intent": "price_or_item", "entities": {"item": "وافل نوتيلا"}}
+{"text": "متاح وافل نوتيلا؟", "intent": "price_or_item", "entities": {"item": "وافل نوتيلا"}}
+{"text": "عايز وافل نوتيلا", "intent": "order", "entities": {"item": "وافل نوتيلا", "quantity": 1}}
+{"text": "ضيف 2 وافل نوتيلا", "intent": "order", "entities": {"item": "وافل نوتيلا", "quantity": 2}}
+{"text": "مكونات وافل نوتيلا ايه؟", "intent": "price_or_item", "entities": {"item": "وافل نوتيلا"}}
+{"text": "آيس كريم 3 بولة بكام؟", "intent": "price_or_item", "entities": {"item": "آيس كريم 3 بولة"}}
+{"text": "متاح آيس كريم 3 بولة؟", "intent": "price_or_item", "entities": {"item": "آيس كريم 3 بولة"}}
+{"text": "عايز آيس كريم 3 بولة", "intent": "order", "entities": {"item": "آيس كريم 3 بولة", "quantity": 1}}
+{"text": "ضيف 2 آيس كريم 3 بولة", "intent": "order", "entities": {"item": "آيس كريم 3 بولة", "quantity": 2}}
+{"text": "مكونات آيس كريم 3 بولة ايه؟", "intent": "price_or_item", "entities": {"item": "آيس كريم 3 بولة"}}
+{"text": "ليمون نعناع بكام؟", "intent": "price_or_item", "entities": {"item": "ليمون نعناع"}}
+{"text": "متاح ليمون نعناع؟", "intent": "price_or_item", "entities": {"item": "ليمون نعناع"}}
+{"text": "عايز ليمون نعناع", "intent": "order", "entities": {"item": "ليمون نعناع", "quantity": 1}}
+{"text": "ضيف 2 ليمون نعناع", "intent": "order", "entities": {"item": "ليمون نعناع", "quantity": 2}}
+{"text": "مكونات ليمون نعناع ايه؟", "intent": "price_or_item", "entities": {"item": "ليمون نعناع"}}
+{"text": "برتقال فريش بكام؟", "intent": "price_or_item", "entities": {"item": "برتقال فريش"}}
+{"text": "متاح برتقال فريش؟", "intent": "price_or_item", "entities": {"item": "برتقال فريش"}}
+{"text": "عايز برتقال فريش", "intent": "order", "entities": {"item": "برتقال فريش", "quantity": 1}}
+{"text": "ضيف 2 برتقال فريش", "intent": "order", "entities": {"item": "برتقال فريش", "quantity": 2}}
+{"text": "مكونات برتقال فريش ايه؟", "intent": "price_or_item", "entities": {"item": "برتقال فريش"}}
+{"text": "مانجو فريش بكام؟", "intent": "price_or_item", "entities": {"item": "مانجو فريش"}}
+{"text": "متاح مانجو فريش؟", "intent": "price_or_item", "entities": {"item": "مانجو فريش"}}
+{"text": "عايز مانجو فريش", "intent": "order", "entities": {"item": "مانجو فريش", "quantity": 1}}
+{"text": "ضيف 2 مانجو فريش", "intent": "order", "entities": {"item": "مانجو فريش", "quantity": 2}}
+{"text": "مكونات مانجو فريش ايه؟", "intent": "price_or_item", "entities": {"item": "مانجو فريش"}}
+{"text": "فراولة بكام؟", "intent": "price_or_item", "entities": {"item": "فراولة"}}
+{"text": "متاح فراولة؟", "intent": "price_or_item", "entities": {"item": "فراولة"}}
+{"text": "عايز فراولة", "intent": "order", "entities": {"item": "فراولة", "quantity": 1}}
+{"text": "ضيف 2 فراولة", "intent": "order", "entities": {"item": "فراولة", "quantity": 2}}
+{"text": "مكونات فراولة ايه؟", "intent": "price_or_item", "entities": {"item": "فراولة"}}
+{"text": "قهوة تركي بكام؟", "intent": "price_or_item", "entities": {"item": "قهوة تركي"}}
+{"text": "متاح قهوة تركي؟", "intent": "price_or_item", "entities": {"item": "قهوة تركي"}}
+{"text": "عايز قهوة تركي", "intent": "order", "entities": {"item": "قهوة تركي", "quantity": 1}}
+{"text": "ضيف 2 قهوة تركي", "intent": "order", "entities": {"item": "قهوة تركي", "quantity": 2}}
+{"text": "مكونات قهوة تركي ايه؟", "intent": "price_or_item", "entities": {"item": "قهوة تركي"}}
+{"text": "إسبريسو بكام؟", "intent": "price_or_item", "entities": {"item": "إسبريسو"}}
+{"text": "متاح إسبريسو؟", "intent": "price_or_item", "entities": {"item": "إسبريسو"}}
+{"text": "عايز إسبريسو", "intent": "order", "entities": {"item": "إسبريسو", "quantity": 1}}
+{"text": "ضيف 2 إسبريسو", "intent": "order", "entities": {"item": "إسبريسو", "quantity": 2}}
+{"text": "مكونات إسبريسو ايه؟", "intent": "price_or_item", "entities": {"item": "إسبريسو"}}
+{"text": "كابتشينو بكام؟", "intent": "price_or_item", "entities": {"item": "كابتشينو"}}
+{"text": "متاح كابتشينو؟", "intent": "price_or_item", "entities": {"item": "كابتشينو"}}
+{"text": "عايز كابتشينو", "intent": "order", "entities": {"item": "كابتشينو", "quantity": 1}}
+{"text": "ضيف 2 كابتشينو", "intent": "order", "entities": {"item": "كابتشينو", "quantity": 2}}
+{"text": "مكونات كابتشينو ايه؟", "intent": "price_or_item", "entities": {"item": "كابتشينو"}}
+{"text": "شاي بكام؟", "intent": "price_or_item", "entities": {"item": "شاي"}}
+{"text": "متاح شاي؟", "intent": "price_or_item", "entities": {"item": "شاي"}}
+{"text": "عايز شاي", "intent": "order", "entities": {"item": "شاي", "quantity": 1}}
+{"text": "ضيف 2 شاي", "intent": "order", "entities": {"item": "شاي", "quantity": 2}}
+{"text": "مكونات شاي ايه؟", "intent": "price_or_item", "entities": {"item": "شاي"}}
+{"text": "سحلب بكام؟", "intent": "price_or_item", "entities": {"item": "سحلب"}}
+{"text": "متاح سحلب؟", "intent": "price_or_item", "entities": {"item": "سحلب"}}
+{"text": "عايز سحلب", "intent": "order", "entities": {"item": "سحلب", "quantity": 1}}
+{"text": "ضيف 2 سحلب", "intent": "order", "entities": {"item": "سحلب", "quantity": 2}}
+{"text": "مكونات سحلب ايه؟", "intent": "price_or_item", "entities": {"item": "سحلب"}}
+{"text": "مياه معدنية بكام؟", "intent": "price_or_item", "entities": {"item": "مياه معدنية"}}
+{"text": "متاح مياه معدنية؟", "intent": "price_or_item", "entities": {"item": "مياه معدنية"}}
+{"text": "عايز مياه معدنية", "intent": "order", "entities": {"item": "مياه معدنية", "quantity": 1}}
+{"text": "ضيف 2 مياه معدنية", "intent": "order", "entities": {"item": "مياه معدنية", "quantity": 2}}
+{"text": "مكونات مياه معدنية ايه؟", "intent": "price_or_item", "entities": {"item": "مياه معدنية"}}
+{"text": "مشروب غازي بكام؟", "intent": "price_or_item", "entities": {"item": "مشروب غازي"}}
+{"text": "متاح مشروب غازي؟", "intent": "price_or_item", "entities": {"item": "مشروب غازي"}}
+{"text": "عايز مشروب غازي", "intent": "order", "entities": {"item": "مشروب غازي", "quantity": 1}}
+{"text": "ضيف 2 مشروب غازي", "intent": "order", "entities": {"item": "مشروب غازي", "quantity": 2}}
+{"text": "مكونات مشروب غازي ايه؟", "intent": "price_or_item", "entities": {"item": "مشروب غازي"}}
+{"text": "عندكم فراخ؟", "intent": "menu", "entities": {"tag": "فراخ"}}
+{"text": "رشحلي حاجة فراخ", "intent": "menu", "entities": {"tag": "فراخ"}}
+{"text": "عندكم لحوم؟", "intent": "menu", "entities": {"tag": "لحوم"}}
+{"text": "رشحلي حاجة لحوم", "intent": "menu", "entities": {"tag": "لحوم"}}
+{"text": "عندكم نباتي؟", "intent": "menu", "entities": {"tag": "نباتي"}}
+{"text": "رشحلي حاجة نباتي", "intent": "menu", "entities": {"tag": "نباتي"}}
+{"text": "عندكم صيامي؟", "intent": "menu", "entities": {"tag": "صيامي"}}
+{"text": "رشحلي حاجة صيامي", "intent": "menu", "entities": {"tag": "صيامي"}}
+{"text": "عندكم سي فود؟", "intent": "menu", "entities": {"tag": "سي فود"}}
+{"text": "رشحلي حاجة سي فود", "intent": "menu", "entities": {"tag": "سي فود"}}
+{"text": "عندكم حلو؟", "intent": "menu", "entities": {"tag": "حلو"}}
+{"text": "رشحلي حاجة حلو", "intent": "menu", "entities": {"tag": "حلو"}}
+{"text": "عندكم مشويات؟", "intent": "menu", "entities": {"tag": "مشويات"}}
+{"text": "رشحلي حاجة مشويات", "intent": "menu", "entities": {"tag": "مشويات"}}
+{"text": "عندكم فطار؟", "intent": "menu", "entities": {"tag": "فطار"}}
+{"text": "رشحلي حاجة فطار", "intent": "menu", "entities": {"tag": "فطار"}}
+{"text": "عندكم أطفال؟", "intent": "menu", "entities": {"tag": "أطفال"}}
+{"text": "رشحلي حاجة أطفال", "intent": "menu", "entities": {"tag": "أطفال"}}
+{"text": "عندكم باستا؟", "intent": "menu", "entities": {"tag": "باستا"}}
+{"text": "رشحلي حاجة باستا", "intent": "menu", "entities": {"tag": "باستا"}}
+{"text": "عندكم بيتزا؟", "intent": "menu", "entities": {"tag": "بيتزا"}}
+{"text": "رشحلي حاجة بيتزا", "intent": "menu", "entities": {"tag": "بيتزا"}}

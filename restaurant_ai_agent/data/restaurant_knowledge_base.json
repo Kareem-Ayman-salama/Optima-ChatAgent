@@ -1,0 +1,3313 @@
+{
+  "schema_version": "2.0.0",
+  "dataset_note": "Dataset واقعي كبير لمطعم تجريبي. غير منسوب لبراند حقيقي ولا يمثل أسعار مطعم فعلي.",
+  "restaurant": {
+    "name": "بيت المذاق",
+    "legal_name": "بيت المذاق للمطاعم",
+    "language": "ar-EG",
+    "tone": "ودود، مختصر، محترم، باللهجة المصرية الخفيفة، ويتصرف ككاشير فاهم المنيو.",
+    "brand_voice": {
+      "style": "كاشير مطعم محترف",
+      "do": [
+        "يرشح أصناف حسب طلب العميل",
+        "يأكد الأسعار من الداتا فقط",
+        "يسأل خطوة واحدة كل مرة"
+      ],
+      "dont": [
+        "ما يخترعش سعر",
+        "ما يأكدش حجز نهائي",
+        "ما يتعاملش مع حساسية شديدة بدون تحويل لبشري"
+      ]
+    },
+    "conversation": {
+      "opening_messages": [
+        "أهلًا وسهلًا بيك في بيت المذاق. تحب أساعدك في المنيو، طلب جديد، حجز، ولا دليفري؟",
+        "نورت بيت المذاق. قولّي تحب تاكل إيه وأنا أظبط لك الطلب.",
+        "أهلًا بيك. أقدر أساعدك في اختيار الأكل، تسجيل طلب، أو حجز ترابيزة."
+      ],
+      "closing_messages": [
+        "شكرًا ليك، نورت بيت المذاق. مستنيينك دايمًا.",
+        "تحت أمرك في أي وقت. يومك جميل.",
+        "اتشرفنا بيك. لو احتجت تضيف حاجة ابعت لنا في أي وقت."
+      ],
+      "empty_message": "أنا معاك. اكتب اسم صنف، أو قول طلب جديد، حجز، دليفري، أو منيو.",
+      "order_more_prompt": "تحب تضيف حاجة تانية؟ لو الطلب كده تمام قول: تأكيد الطلب.",
+      "handoff_message": "تمام، هحوّل كلامك لحد من فريق المطعم يتابع معاك بنفسه."
+    },
+    "phone": "01000000000",
+    "whatsapp": "01000000000",
+    "address": "شارع النيل، المعادي، القاهرة",
+    "maps_url": "https://maps.example.com/beit-elmazak",
+    "branches": [
+      {
+        "id": "maadi",
+        "name": "فرع المعادي",
+        "address": "شارع النيل، المعادي، القاهرة",
+        "phone": "01000000000",
+        "delivery_areas": [
+          "المعادي",
+          "زهراء المعادي",
+          "دار السلام",
+          "البساتين"
+        ]
+      },
+      {
+        "id": "nasr_city",
+        "name": "فرع مدينة نصر",
+        "address": "شارع مصطفى النحاس، مدينة نصر",
+        "phone": "01000000001",
+        "delivery_areas": [
+          "مدينة نصر",
+          "عباس العقاد",
+          "مكرم عبيد",
+          "التجمع الأول"
+        ]
+      },
+      {
+        "id": "new_cairo",
+        "name": "فرع التجمع",
+        "address": "شارع التسعين الشمالي، التجمع الخامس",
+        "phone": "01000000002",
+        "delivery_areas": [
+          "التجمع الخامس",
+          "الرحاب",
+          "مدينتي",
+          "الشروق"
+        ]
+      }
+    ],
+    "opening_hours": {
+      "saturday_to_wednesday": "12:00 ظهرًا - 12:00 منتصف الليل",
+      "thursday_to_friday": "12:00 ظهرًا - 2:00 صباحًا",
+      "breakfast": "8:00 صباحًا - 12:00 ظهرًا",
+      "kitchen_last_order": "قبل الإغلاق بـ 30 دقيقة"
+    },
+    "payment_methods": [
+      "كاش",
+      "فيزا",
+      "ماستر كارد",
+      "محفظة إلكترونية",
+      "إنستا باي عند الاستلام"
+    ],
+    "tax_and_service": {
+      "vat_percent": 14,
+      "service_percent_dine_in": 12,
+      "packaging_fee_egp": 8,
+      "prices_include_vat": false
+    },
+    "reservation_policy": {
+      "enabled": true,
+      "min_people": 1,
+      "max_people_online": 12,
+      "required_fields": [
+        "date",
+        "people",
+        "time",
+        "name",
+        "phone"
+      ],
+      "allowed_slots": [
+        "12:00",
+        "13:00",
+        "14:00",
+        "15:00",
+        "16:00",
+        "17:00",
+        "18:00",
+        "19:00",
+        "20:00",
+        "21:00",
+        "22:00",
+        "23:00"
+      ],
+      "notes": "الحجز بيتأكد برسالة تأكيد من المطعم. للحجوزات أكبر من 12 شخص، العميل يتواصل تليفونيًا."
+    },
+    "delivery_policy": {
+      "enabled": true,
+      "areas": [
+        "المعادي",
+        "زهراء المعادي",
+        "دار السلام",
+        "البساتين",
+        "مدينة نصر",
+        "التجمع الخامس",
+        "الرحاب",
+        "مدينتي"
+      ],
+      "area_details": [
+        {
+          "area": "المعادي",
+          "fee_egp": 35,
+          "eta_minutes": "35-50",
+          "minimum_order_egp": 150
+        },
+        {
+          "area": "زهراء المعادي",
+          "fee_egp": 40,
+          "eta_minutes": "45-60",
+          "minimum_order_egp": 180
+        },
+        {
+          "area": "مدينة نصر",
+          "fee_egp": 45,
+          "eta_minutes": "45-65",
+          "minimum_order_egp": 180
+        },
+        {
+          "area": "التجمع الخامس",
+          "fee_egp": 55,
+          "eta_minutes": "50-75",
+          "minimum_order_egp": 220
+        },
+        {
+          "area": "مدينتي",
+          "fee_egp": 70,
+          "eta_minutes": "70-90",
+          "minimum_order_egp": 250
+        }
+      ],
+      "estimated_minutes": "45-60 دقيقة",
+      "minimum_order_egp": 150
+    },
+    "order_policy": {
+      "enabled": true,
+      "service_types": [
+        "dine_in",
+        "takeaway",
+        "delivery"
+      ],
+      "required_fields": [
+        "service_type",
+        "name",
+        "phone"
+      ],
+      "delivery_required_fields": [
+        "address"
+      ],
+      "notes": "الطلب هنا مبدئي للتجربة، والتأكيد النهائي يتم من الكاشير أو نظام الطلبات."
+    }
+  },
+  "categories": [
+    {
+      "id": "soups",
+      "name": "شوربات",
+      "display_order": 1,
+      "items": [
+        {
+          "id": "shwrbh_ads",
+          "sku": "BM-SHWRBH_ADS",
+          "name": "شوربة عدس",
+          "price_egp": 55,
+          "description": "عدس أصفر مع عيش محمص ولمون.",
+          "tags": [
+            "نباتي",
+            "شوربة",
+            "سخن",
+            "غداء"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 170,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة عدس على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_krymh_frakh",
+          "sku": "BM-SHWRBH_KRYMH_FRAKH",
+          "name": "شوربة كريمة فراخ",
+          "price_egp": 95,
+          "description": "كريمة خفيفة مع قطع فراخ ومشروم.",
+          "tags": [
+            "فراخ",
+            "شوربة",
+            "سخن"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 14,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 294,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة كريمة فراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_sy_fwd",
+          "sku": "BM-SHWRBH_SY_FWD",
+          "name": "شوربة سي فود",
+          "price_egp": 145,
+          "description": "جمبري وكاليماري في شوربة كريمي.",
+          "tags": [
+            "سي فود",
+            "شوربة"
+          ],
+          "allergens": [
+            "مأكولات بحرية",
+            "ألبان"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 16,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 449,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة سي فود على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_mshrwm",
+          "sku": "BM-SHWRBH_MSHRWM",
+          "name": "شوربة مشروم",
+          "price_egp": 85,
+          "description": "مشروم طازة مع كريمة وبهارات خفيفة.",
+          "tags": [
+            "نباتي",
+            "شوربة"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 263,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة مشروم على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_tmatm_balryhan",
+          "sku": "BM-SHWRBH_TMATM_BALRY",
+          "name": "شوربة طماطم بالريحان",
+          "price_egp": 70,
+          "description": "طماطم مشوية وريحان وزيت زيتون.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "شوربة"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 13,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 217,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة طماطم بالريحان على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_lsan_asfwr",
+          "sku": "BM-SHWRBH_LSAN_ASFWR",
+          "name": "شوربة لسان عصفور",
+          "price_egp": 65,
+          "description": "شوربة خفيفة بلسان عصفور وخضار.",
+          "tags": [
+            "شوربة",
+            "خفيف"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 10,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 201,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة لسان عصفور على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_bsl_frnsyh",
+          "sku": "BM-SHWRBH_BSL_FRNSYH",
+          "name": "شوربة بصل فرنسية",
+          "price_egp": 110,
+          "description": "بصل مكرمل مع جبنة موتزاريلا وعيش محمص.",
+          "tags": [
+            "شوربة",
+            "جبنة"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 341,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة بصل فرنسية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_khdar",
+          "sku": "BM-SHWRBH_KHDAR",
+          "name": "شوربة خضار",
+          "price_egp": 60,
+          "description": "خضار موسمي في مرقة خفيفة.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "شوربة"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 11,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 186,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة خضار على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "سلطات",
+      "display_order": 2,
+      "items": [
+        {
+          "id": "slth_khdra",
+          "sku": "BM-SLTH_KHDRA",
+          "name": "سلطة خضراء",
+          "price_egp": 45,
+          "description": "خيار وطماطم وخس وجزر مع دريسنج ليمون.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "سلطة"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 7,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 139,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة خضراء على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_syzr_frakh",
+          "sku": "BM-SLTH_SYZR_FRAKH",
+          "name": "سلطة سيزر فراخ",
+          "price_egp": 135,
+          "description": "خس روماني وفراخ مشوية وبارميزان وكراتون.",
+          "tags": [
+            "فراخ",
+            "سلطة"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 418,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة سيزر فراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_ftwsh",
+          "sku": "BM-SLTH_FTWSH",
+          "name": "سلطة فتوش",
+          "price_egp": 75,
+          "description": "خضار طازة وسماق وعيش محمص.",
+          "tags": [
+            "نباتي",
+            "شرقي",
+            "سلطة"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 232,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة فتوش على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_tbwlh",
+          "sku": "BM-SLTH_TBWLH",
+          "name": "سلطة تبولة",
+          "price_egp": 70,
+          "description": "بقدونس وبرغل وطماطم ولمون.",
+          "tags": [
+            "نباتي",
+            "شرقي",
+            "سلطة"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 217,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة تبولة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_grgyr_balrman",
+          "sku": "BM-SLTH_GRGYR_BALRMAN",
+          "name": "سلطة جرجير بالرمان",
+          "price_egp": 85,
+          "description": "جرجير ورمان وجبنة فيتا اختيارية.",
+          "tags": [
+            "نباتي",
+            "سلطة"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 9,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 263,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة جرجير بالرمان على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_thynh",
+          "sku": "BM-SLTH_THYNH",
+          "name": "سلطة طحينة",
+          "price_egp": 40,
+          "description": "طحينة بالليمون والكمون.",
+          "tags": [
+            "نباتي",
+            "شرقي"
+          ],
+          "allergens": [
+            "سمسم"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 124,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة طحينة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_baba_ghnwg",
+          "sku": "BM-SLTH_BABA_GHNWG",
+          "name": "سلطة بابا غنوج",
+          "price_egp": 55,
+          "description": "باذنجان مشوي وطحينة ورمان.",
+          "tags": [
+            "نباتي",
+            "شرقي"
+          ],
+          "allergens": [
+            "سمسم"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 170,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة بابا غنوج على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_zbady_balkhyar",
+          "sku": "BM-SLTH_ZBADY_BALKHYA",
+          "name": "سلطة زبادي بالخيار",
+          "price_egp": 45,
+          "description": "زبادي وخيار ونعناع.",
+          "tags": [
+            "بارد",
+            "سلطة"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 139,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة زبادي بالخيار على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "slth_kynwa",
+          "sku": "BM-SLTH_KYNWA",
+          "name": "سلطة كينوا",
+          "price_egp": 125,
+          "description": "كينوا وخضار مشوي وصوص ليمون.",
+          "tags": [
+            "نباتي",
+            "صحي",
+            "سلطة"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 11,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 387,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سلطة كينوا على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "name": "مقبلات",
+      "display_order": 3,
+      "items": [
+        {
+          "id": "myks_mzat_shrqy",
+          "sku": "BM-MYKS_MZAT_SHRQY",
+          "name": "ميكس مزات شرقي",
+          "price_egp": 135,
+          "description": "طحينة وبابا غنوج ومخلل وعيش بلدي.",
+          "tags": [
+            "مشاركة",
+            "شرقي"
+          ],
+          "allergens": [
+            "سمسم",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 418,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ميكس مزات شرقي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "btats_mhmrh",
+          "sku": "BM-BTATS_MHMRH",
+          "name": "بطاطس محمرة",
+          "price_egp": 65,
+          "description": "بطاطس مقرمشة مع كاتشب ومايونيز.",
+          "tags": [
+            "بطاطس",
+            "سريع",
+            "نباتي"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 10,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 201,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بطاطس محمرة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "btats_balgbnh",
+          "sku": "BM-BTATS_BALGBNH",
+          "name": "بطاطس بالجبنة",
+          "price_egp": 95,
+          "description": "بطاطس محمرة بصوص جبنة شيدر.",
+          "tags": [
+            "بطاطس",
+            "جبنة"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 294,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بطاطس بالجبنة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tshykn_krsby",
+          "sku": "BM-TSHYKN_KRSBY",
+          "name": "تشيكن كرسبي",
+          "price_egp": 120,
+          "description": "قطع فراخ مقرمشة مع صوص عسل مستردة.",
+          "tags": [
+            "فراخ",
+            "مقرمش"
+          ],
+          "allergens": [
+            "جلوتين",
+            "بيض"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 15,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 372,
+          "image_prompt": "صورة طبق مطعم واقعية لـ تشيكن كرسبي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "mwtzaryla_styks",
+          "sku": "BM-MWTZARYLA_STYKS",
+          "name": "موتزاريلا ستيكس",
+          "price_egp": 115,
+          "description": "جبنة موتزاريلا مقلية وصوص مارينارا.",
+          "tags": [
+            "جبنة",
+            "مقرمش"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 13,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 356,
+          "image_prompt": "صورة طبق مطعم واقعية لـ موتزاريلا ستيكس على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "smbwsk_gbnh",
+          "sku": "BM-SMBWSK_GBNH",
+          "name": "سمبوسك جبنة",
+          "price_egp": 90,
+          "description": "سمبوسك محشي جبنة مشكلة.",
+          "tags": [
+            "جبنة",
+            "شرقي"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 279,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سمبوسك جبنة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "smbwsk_lhmh",
+          "sku": "BM-SMBWSK_LHMH",
+          "name": "سمبوسك لحمة",
+          "price_egp": 105,
+          "description": "سمبوسك محشي لحمة مفرومة وبهارات.",
+          "tags": [
+            "لحوم",
+            "شرقي"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 325,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سمبوسك لحمة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "wrq_anb",
+          "sku": "BM-WRQ_ANB",
+          "name": "ورق عنب",
+          "price_egp": 85,
+          "description": "ورق عنب بزيت زيتون ولمون.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "شرقي"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 10,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 263,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ورق عنب على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "kbh_shamyh",
+          "sku": "BM-KBH_SHAMYH",
+          "name": "كبة شامية",
+          "price_egp": 130,
+          "description": "كبة مقلية باللحمة والصنوبر.",
+          "tags": [
+            "لحوم",
+            "شرقي"
+          ],
+          "allergens": [
+            "جلوتين",
+            "مكسرات"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 16,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 403,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كبة شامية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "agnhh_baflw",
+          "sku": "BM-AGNHH_BAFLW",
+          "name": "أجنحة بافلو",
+          "price_egp": 155,
+          "description": "أجنحة فراخ بصوص بافلو حار.",
+          "tags": [
+            "فراخ",
+            "حار"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 3,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 480,
+          "image_prompt": "صورة طبق مطعم واقعية لـ أجنحة بافلو على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "sandwiches",
+      "name": "ساندوتشات",
+      "display_order": 4,
+      "items": [
+        {
+          "id": "shawrma_frakh",
+          "sku": "BM-SHAWRMA_FRAKH",
+          "name": "شاورما فراخ",
+          "price_egp": 95,
+          "description": "شاورما فراخ تومية ومخلل في عيش صاج.",
+          "tags": [
+            "فراخ",
+            "سريع",
+            "ساندوتش"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 294,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شاورما فراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shawrma_lhmh",
+          "sku": "BM-SHAWRMA_LHMH",
+          "name": "شاورما لحمة",
+          "price_egp": 125,
+          "description": "شاورما لحمة بطحينة وبصل وسماق.",
+          "tags": [
+            "لحوم",
+            "ساندوتش"
+          ],
+          "allergens": [
+            "جلوتين",
+            "سمسم"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 387,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شاورما لحمة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "brgr_lhm",
+          "sku": "BM-BRGR_LHM",
+          "name": "برجر لحم",
+          "price_egp": 175,
+          "description": "برجر لحم 180 جم، شيدر، صوص خاص وبطاطس.",
+          "tags": [
+            "لحوم",
+            "برجر",
+            "سريع"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين",
+            "بيض"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 542,
+          "image_prompt": "صورة طبق مطعم واقعية لـ برجر لحم على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "brgr_frakh_krsby",
+          "sku": "BM-BRGR_FRAKH_KRSBY",
+          "name": "برجر فراخ كرسبي",
+          "price_egp": 165,
+          "description": "فراخ كرسبي، كول سلو، صوص سبايسي.",
+          "tags": [
+            "فراخ",
+            "برجر",
+            "مقرمش"
+          ],
+          "allergens": [
+            "جلوتين",
+            "بيض"
+          ],
+          "spice_level": 2,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 511,
+          "image_prompt": "صورة طبق مطعم واقعية لـ برجر فراخ كرسبي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "sandwtsh_kfth",
+          "sku": "BM-SANDWTSH_KFTH",
+          "name": "ساندوتش كفتة",
+          "price_egp": 130,
+          "description": "كفتة مشوية وطحينة وبقدونس.",
+          "tags": [
+            "لحوم",
+            "مشوي",
+            "ساندوتش"
+          ],
+          "allergens": [
+            "جلوتين",
+            "سمسم"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 14,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 403,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ساندوتش كفتة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "sandwtsh_sgq_bldy",
+          "sku": "BM-SANDWTSH_SGQ_BLDY",
+          "name": "ساندوتش سجق بلدي",
+          "price_egp": 120,
+          "description": "سجق بلدي حار مع فلفل وبصل.",
+          "tags": [
+            "لحوم",
+            "حار"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 3,
+          "prep_minutes": 15,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 372,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ساندوتش سجق بلدي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "sandwtsh_faهyta_frakh",
+          "sku": "BM-SANDWTSH_FAهYTA_FR",
+          "name": "ساندوتش فاهيتا فراخ",
+          "price_egp": 145,
+          "description": "فراخ فاهيتا وفلفل ألوان وجبنة.",
+          "tags": [
+            "فراخ",
+            "جبنة"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 16,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 449,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ساندوتش فاهيتا فراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "sandwtsh_hlwmy_mshwy",
+          "sku": "BM-SANDWTSH_HLWMY_MSH",
+          "name": "ساندوتش حلومي مشوي",
+          "price_egp": 135,
+          "description": "جبنة حلومي مشوية وخضار.",
+          "tags": [
+            "نباتي",
+            "جبنة"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 13,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 418,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ساندوتش حلومي مشوي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "sandwtsh_flafl",
+          "sku": "BM-SANDWTSH_FLAFL",
+          "name": "ساندوتش فلافل",
+          "price_egp": 55,
+          "description": "فلافل وطحينة وسلطة في عيش بلدي.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "شرقي"
+          ],
+          "allergens": [
+            "جلوتين",
+            "سمسم"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 9,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 170,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ساندوتش فلافل على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "sandwtsh_btats_swry",
+          "sku": "BM-SANDWTSH_BTATS_SWR",
+          "name": "ساندوتش بطاطس سوري",
+          "price_egp": 70,
+          "description": "بطاطس وتومية ومخلل في عيش صاج.",
+          "tags": [
+            "نباتي",
+            "سريع"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 10,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 217,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ساندوتش بطاطس سوري على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "grills",
+      "name": "مشويات",
+      "display_order": 5,
+      "items": [
+        {
+          "id": "nsf_frkhh_mshwyh",
+          "sku": "BM-NSF_FRKHH_MSHWYH",
+          "name": "نصف فرخة مشوية",
+          "price_egp": 210,
+          "description": "نصف فرخة على الفحم مع رز وسلطة.",
+          "tags": [
+            "فراخ",
+            "مشوي",
+            "غداء",
+            "عشاء"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 25,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 651,
+          "image_prompt": "صورة طبق مطعم واقعية لـ نصف فرخة مشوية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "frkhh_mshwyh_kamlh",
+          "sku": "BM-FRKHH_MSHWYH_KAMLH",
+          "name": "فرخة مشوية كاملة",
+          "price_egp": 390,
+          "description": "فرخة كاملة على الفحم مع رز وسلطات.",
+          "tags": [
+            "فراخ",
+            "مشوي",
+            "عائلي"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 35,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1209,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فرخة مشوية كاملة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "kfth_mshwyh",
+          "sku": "BM-KFTH_MSHWYH",
+          "name": "كفتة مشوية",
+          "price_egp": 245,
+          "description": "كفتة على الفحم مع بطاطس وسلطة طحينة.",
+          "tags": [
+            "لحوم",
+            "مشوي",
+            "غداء"
+          ],
+          "allergens": [
+            "سمسم"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 24,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 759,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كفتة مشوية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "kbab_dany",
+          "sku": "BM-KBAB_DANY",
+          "name": "كباب ضاني",
+          "price_egp": 360,
+          "description": "قطع ضاني مشوية مع خضار مشوي.",
+          "tags": [
+            "لحوم",
+            "مشوي",
+            "فاخر"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 28,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1116,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كباب ضاني على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "trb_mshwy",
+          "sku": "BM-TRB_MSHWY",
+          "name": "طرب مشوي",
+          "price_egp": 310,
+          "description": "طرب بلدي على الفحم مع عيش وسلطات.",
+          "tags": [
+            "لحوم",
+            "مشوي",
+            "شرقي"
+          ],
+          "allergens": [],
+          "spice_level": 2,
+          "prep_minutes": 26,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 961,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طرب مشوي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "rysh_dany",
+          "sku": "BM-RYSH_DANY",
+          "name": "ريش ضاني",
+          "price_egp": 420,
+          "description": "ريش ضاني متبلة ومشوية.",
+          "tags": [
+            "لحوم",
+            "مشوي",
+            "فاخر"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 30,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1302,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ريش ضاني على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shysh_tawwq",
+          "sku": "BM-SHYSH_TAWWQ",
+          "name": "شيش طاووق",
+          "price_egp": 230,
+          "description": "مكعبات فراخ متبلة على السيخ.",
+          "tags": [
+            "فراخ",
+            "مشوي"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 22,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 713,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شيش طاووق على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "myks_gryl_frdy",
+          "sku": "BM-MYKS_GRYL_FRDY",
+          "name": "ميكس جريل فردي",
+          "price_egp": 390,
+          "description": "كفتة وكباب وشيش طاووق مع أرز وسلطات.",
+          "tags": [
+            "لحوم",
+            "فراخ",
+            "مشوي"
+          ],
+          "allergens": [
+            "سمسم"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 30,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1209,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ميكس جريل فردي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "myks_gryl_aaely",
+          "sku": "BM-MYKS_GRYL_AAELY",
+          "name": "ميكس جريل عائلي",
+          "price_egp": 980,
+          "description": "مشويات متنوعة تكفي 4 أفراد.",
+          "tags": [
+            "عائلي",
+            "مشوي",
+            "مشاركة"
+          ],
+          "allergens": [
+            "سمسم"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 40,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 3038,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ميكس جريل عائلي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "hmam_mhshy",
+          "sku": "BM-HMAM_MHSHY",
+          "name": "حمام محشي",
+          "price_egp": 295,
+          "description": "حمام محشي فريك أو رز.",
+          "tags": [
+            "شرقي",
+            "فاخر"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 32,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 914,
+          "image_prompt": "صورة طبق مطعم واقعية لـ حمام محشي على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "أطباق رئيسية",
+      "display_order": 6,
+      "items": [
+        {
+          "id": "mlwkhyh_balfrakh",
+          "sku": "BM-MLWKHYH_BALFRAKH",
+          "name": "ملوخية بالفراخ",
+          "price_egp": 185,
+          "description": "ملوخية خضراء مع ربع فرخة ورز.",
+          "tags": [
+            "فراخ",
+            "شرقي",
+            "غداء"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 22,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 573,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ملوخية بالفراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "fth_mwzh_dany",
+          "sku": "BM-FTH_MWZH_DANY",
+          "name": "فتة موزة ضاني",
+          "price_egp": 395,
+          "description": "موزة ضاني بفتة أرز وثوم وخل.",
+          "tags": [
+            "لحوم",
+            "شرقي",
+            "فاخر"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 35,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1224,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فتة موزة ضاني على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "msqah_nbaty",
+          "sku": "BM-MSQAH_NBATY",
+          "name": "مسقعة نباتي",
+          "price_egp": 150,
+          "description": "مسقعة باذنجان وفلفل وطماطم مع رز.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "غداء"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 465,
+          "image_prompt": "صورة طبق مطعم واقعية لـ مسقعة نباتي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tagn_bamyh_ballhmh",
+          "sku": "BM-TAGN_BAMYH_BALLHMH",
+          "name": "طاجن بامية باللحمة",
+          "price_egp": 265,
+          "description": "بامية في طاجن مع مكعبات لحمة.",
+          "tags": [
+            "لحوم",
+            "شرقي"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 28,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 821,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طاجن بامية باللحمة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tagn_wrq_anb_balkwara",
+          "sku": "BM-TAGN_WRQ_ANB_BALKW",
+          "name": "طاجن ورق عنب بالكوارع",
+          "price_egp": 340,
+          "description": "ورق عنب مع كوارع وصوص طماطم.",
+          "tags": [
+            "شرقي",
+            "فاخر"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 35,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1054,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طاجن ورق عنب بالكوارع على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tagn_akawy",
+          "sku": "BM-TAGN_AKAWY",
+          "name": "طاجن عكاوي",
+          "price_egp": 320,
+          "description": "عكاوي مطبوخة ببطء في طاجن.",
+          "tags": [
+            "لحوم",
+            "شرقي"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 36,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 992,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طاجن عكاوي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "frakh_banyه",
+          "sku": "BM-FRAKH_BANYه",
+          "name": "فراخ بانيه",
+          "price_egp": 175,
+          "description": "بانيه مقرمش مع مكرونة أو رز.",
+          "tags": [
+            "فراخ",
+            "مقرمش"
+          ],
+          "allergens": [
+            "جلوتين",
+            "بيض"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 542,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فراخ بانيه على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bykata_mshrwm",
+          "sku": "BM-BYKATA_MSHRWM",
+          "name": "بيكاتا مشروم",
+          "price_egp": 285,
+          "description": "شرائح لحم بصوص مشروم كريمي.",
+          "tags": [
+            "لحوم",
+            "كريمي"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 25,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 883,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيكاتا مشروم على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "swyt_and_sawr_tshykn",
+          "sku": "BM-SWYT_AND_SAWR_TSHY",
+          "name": "سويت أند ساور تشيكن",
+          "price_egp": 220,
+          "description": "فراخ بصوص حلو حادق مع أرز.",
+          "tags": [
+            "فراخ",
+            "آسيوي"
+          ],
+          "allergens": [
+            "صويا"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 22,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 682,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سويت أند ساور تشيكن على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "styk_mshwy",
+          "sku": "BM-STYK_MSHWY",
+          "name": "ستيك مشوي",
+          "price_egp": 445,
+          "description": "ستيك لحم مع خضار وصوص فلفل.",
+          "tags": [
+            "لحوم",
+            "فاخر"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 30,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1379,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ستيك مشوي على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "باستا",
+      "display_order": 7,
+      "items": [
+        {
+          "id": "basta_alfrydw_frakh",
+          "sku": "BM-BASTA_ALFRYDW_FRAK",
+          "name": "باستا ألفريدو فراخ",
+          "price_egp": 210,
+          "description": "باستا كريمي بفراخ ومشروم.",
+          "tags": [
+            "فراخ",
+            "باستا",
+            "كريمي"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 651,
+          "image_prompt": "صورة طبق مطعم واقعية لـ باستا ألفريدو فراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "basta_sy_fwd",
+          "sku": "BM-BASTA_SY_FWD",
+          "name": "باستا سي فود",
+          "price_egp": 285,
+          "description": "باستا كريمي بالجمبري والكاليماري.",
+          "tags": [
+            "سي فود",
+            "باستا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين",
+            "مأكولات بحرية"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 22,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 883,
+          "image_prompt": "صورة طبق مطعم واقعية لـ باستا سي فود على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "basta_arabyata",
+          "sku": "BM-BASTA_ARABYATA",
+          "name": "باستا أرابياتا",
+          "price_egp": 155,
+          "description": "صوص طماطم حار وريحان.",
+          "tags": [
+            "نباتي",
+            "باستا",
+            "حار"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 2,
+          "prep_minutes": 16,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 480,
+          "image_prompt": "صورة طبق مطعم واقعية لـ باستا أرابياتا على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "basta_bwlwnyz",
+          "sku": "BM-BASTA_BWLWNYZ",
+          "name": "باستا بولونيز",
+          "price_egp": 205,
+          "description": "صوص لحمة مفرومة وطماطم.",
+          "tags": [
+            "لحوم",
+            "باستا"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 19,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 635,
+          "image_prompt": "صورة طبق مطعم واقعية لـ باستا بولونيز على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "lazanya",
+          "sku": "BM-LAZANYA",
+          "name": "لازانيا",
+          "price_egp": 230,
+          "description": "طبقات مكرونة ولحمة وبشاميل.",
+          "tags": [
+            "لحوم",
+            "باستا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 24,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 713,
+          "image_prompt": "صورة طبق مطعم واقعية لـ لازانيا على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "ngrskw_frakh",
+          "sku": "BM-NGRSKW_FRAKH",
+          "name": "نجرسكو فراخ",
+          "price_egp": 215,
+          "description": "مكرونة فرن بفراخ وبشاميل.",
+          "tags": [
+            "فراخ",
+            "باستا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 25,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 666,
+          "image_prompt": "صورة طبق مطعم واقعية لـ نجرسكو فراخ على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "basta_bystw",
+          "sku": "BM-BASTA_BYSTW",
+          "name": "باستا بيستو",
+          "price_egp": 195,
+          "description": "بيستو ريحان وصنوبر وبارميزان.",
+          "tags": [
+            "نباتي",
+            "باستا"
+          ],
+          "allergens": [
+            "مكسرات",
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 604,
+          "image_prompt": "صورة طبق مطعم واقعية لـ باستا بيستو على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "mak_and_tshyz",
+          "sku": "BM-MAK_AND_TSHYZ",
+          "name": "ماك آند تشيز",
+          "price_egp": 170,
+          "description": "مكرونة بصوص جبنة غني.",
+          "tags": [
+            "جبنة",
+            "باستا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 16,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 527,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ماك آند تشيز على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "بيتزا",
+      "display_order": 8,
+      "items": [
+        {
+          "id": "bytza_margryta",
+          "sku": "BM-BYTZA_MARGRYTA",
+          "name": "بيتزا مارجريتا",
+          "price_egp": 155,
+          "description": "موتزاريلا وصوص طماطم وريحان.",
+          "tags": [
+            "نباتي",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 480,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا مارجريتا على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_bybrwny",
+          "sku": "BM-BYTZA_BYBRWNY",
+          "name": "بيتزا بيبروني",
+          "price_egp": 210,
+          "description": "بيبروني وموتزاريلا وصوص طماطم.",
+          "tags": [
+            "لحوم",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 651,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا بيبروني على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_frakh_barbkyw",
+          "sku": "BM-BYTZA_FRAKH_BARBKY",
+          "name": "بيتزا فراخ باربكيو",
+          "price_egp": 225,
+          "description": "فراخ باربكيو وبصل وموتزاريلا.",
+          "tags": [
+            "فراخ",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 21,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 697,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا فراخ باربكيو على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_sy_fwd",
+          "sku": "BM-BYTZA_SY_FWD",
+          "name": "بيتزا سي فود",
+          "price_egp": 295,
+          "description": "جمبري وكاليماري وموتزاريلا.",
+          "tags": [
+            "سي فود",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين",
+            "مأكولات بحرية"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 23,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 914,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا سي فود على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_khdar",
+          "sku": "BM-BYTZA_KHDAR",
+          "name": "بيتزا خضار",
+          "price_egp": 175,
+          "description": "فلفل ومشروم وزيتون وبصل.",
+          "tags": [
+            "نباتي",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 19,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 542,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا خضار على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_fwr_tshyz",
+          "sku": "BM-BYTZA_FWR_TSHYZ",
+          "name": "بيتزا فور تشيز",
+          "price_egp": 245,
+          "description": "أربع أنواع جبنة.",
+          "tags": [
+            "جبنة",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 21,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 759,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا فور تشيز على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_sgq",
+          "sku": "BM-BYTZA_SGQ",
+          "name": "بيتزا سجق",
+          "price_egp": 215,
+          "description": "سجق بلدي وفلفل وموتزاريلا.",
+          "tags": [
+            "لحوم",
+            "حار",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 2,
+          "prep_minutes": 21,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 666,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا سجق على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_rwmy_mdkhn",
+          "sku": "BM-BYTZA_RWMY_MDKHN",
+          "name": "بيتزا رومي مدخن",
+          "price_egp": 235,
+          "description": "رومي مدخن ومشروم وجبنة.",
+          "tags": [
+            "لحوم",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 728,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا رومي مدخن على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "seafood",
+      "name": "سي فود",
+      "display_order": 9,
+      "items": [
+        {
+          "id": "gmbry_mshwy",
+          "sku": "BM-GMBRY_MSHWY",
+          "name": "جمبري مشوي",
+          "price_egp": 360,
+          "description": "جمبري متبل ومشوي مع أرز صيادية.",
+          "tags": [
+            "سي فود",
+            "مشوي"
+          ],
+          "allergens": [
+            "مأكولات بحرية"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 24,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1116,
+          "image_prompt": "صورة طبق مطعم واقعية لـ جمبري مشوي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "gmbry_mqly",
+          "sku": "BM-GMBRY_MQLY",
+          "name": "جمبري مقلي",
+          "price_egp": 345,
+          "description": "جمبري بانيه مقرمش مع صوص تارتار.",
+          "tags": [
+            "سي فود",
+            "مقرمش"
+          ],
+          "allergens": [
+            "مأكولات بحرية",
+            "جلوتين",
+            "بيض"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 22,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1069,
+          "image_prompt": "صورة طبق مطعم واقعية لـ جمبري مقلي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "kalymary_mqly",
+          "sku": "BM-KALYMARY_MQLY",
+          "name": "كاليماري مقلي",
+          "price_egp": 285,
+          "description": "حلقات كاليماري مقرمشة.",
+          "tags": [
+            "سي فود",
+            "مقرمش"
+          ],
+          "allergens": [
+            "مأكولات بحرية",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 883,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كاليماري مقلي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "fylyه_smk_mshwy",
+          "sku": "BM-FYLYه_SMK_MSHWY",
+          "name": "فيليه سمك مشوي",
+          "price_egp": 260,
+          "description": "فيليه سمك مشوي مع خضار.",
+          "tags": [
+            "سي فود",
+            "صحي"
+          ],
+          "allergens": [
+            "سمك"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 20,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 806,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فيليه سمك مشوي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tagn_sy_fwd",
+          "sku": "BM-TAGN_SY_FWD",
+          "name": "طاجن سي فود",
+          "price_egp": 395,
+          "description": "جمبري وكاليماري وسمك في طاجن.",
+          "tags": [
+            "سي فود",
+            "شرقي"
+          ],
+          "allergens": [
+            "مأكولات بحرية"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 30,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 1224,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طاجن سي فود على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "smk_sngary",
+          "sku": "BM-SMK_SNGARY",
+          "name": "سمك سنجاري",
+          "price_egp": 320,
+          "description": "سمك سنجاري بالخلطة والخضار.",
+          "tags": [
+            "سي فود",
+            "مشوي"
+          ],
+          "allergens": [
+            "سمك"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 30,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 992,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سمك سنجاري على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "arz_syadyh",
+          "sku": "BM-ARZ_SYADYH",
+          "name": "أرز صيادية",
+          "price_egp": 75,
+          "description": "أرز بني بتوابل الصيادية.",
+          "tags": [
+            "سي فود",
+            "جانبي"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 232,
+          "image_prompt": "صورة طبق مطعم واقعية لـ أرز صيادية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shwrbh_gmbry_harh",
+          "sku": "BM-SHWRBH_GMBRY_HARH",
+          "name": "شوربة جمبري حارة",
+          "price_egp": 160,
+          "description": "شوربة جمبري بالطماطم والشطة.",
+          "tags": [
+            "سي فود",
+            "حار"
+          ],
+          "allergens": [
+            "مأكولات بحرية"
+          ],
+          "spice_level": 3,
+          "prep_minutes": 18,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 496,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شوربة جمبري حارة على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "name": "فطار",
+      "display_order": 10,
+      "items": [
+        {
+          "id": "fwl_askndrany",
+          "sku": "BM-FWL_ASKNDRANY",
+          "name": "فول إسكندراني",
+          "price_egp": 45,
+          "description": "فول بزيت حار وطماطم وفلفل.",
+          "tags": [
+            "نباتي",
+            "فطار",
+            "شرقي"
+          ],
+          "allergens": [],
+          "spice_level": 1,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 139,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فول إسكندراني على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "fwl_balzbdh",
+          "sku": "BM-FWL_BALZBDH",
+          "name": "فول بالزبدة",
+          "price_egp": 50,
+          "description": "فول بالزبدة والكمون.",
+          "tags": [
+            "فطار",
+            "شرقي"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 155,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فول بالزبدة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tamyh",
+          "sku": "BM-TAMYH",
+          "name": "طعمية",
+          "price_egp": 40,
+          "description": "طعمية سخنة مع طحينة.",
+          "tags": [
+            "نباتي",
+            "صيامي",
+            "فطار"
+          ],
+          "allergens": [
+            "سمسم"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 7,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 124,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طعمية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "byd_aywn",
+          "sku": "BM-BYD_AYWN",
+          "name": "بيض عيون",
+          "price_egp": 55,
+          "description": "بيض عيون بزبدة أو زيت.",
+          "tags": [
+            "فطار"
+          ],
+          "allergens": [
+            "بيض",
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 170,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيض عيون على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "awmlyt_gbnh",
+          "sku": "BM-AWMLYT_GBNH",
+          "name": "أومليت جبنة",
+          "price_egp": 75,
+          "description": "أومليت بالجبنة والخضار.",
+          "tags": [
+            "فطار",
+            "جبنة"
+          ],
+          "allergens": [
+            "بيض",
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 10,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 232,
+          "image_prompt": "صورة طبق مطعم واقعية لـ أومليت جبنة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shkshwkh",
+          "sku": "BM-SHKSHWKH",
+          "name": "شكشوكة",
+          "price_egp": 70,
+          "description": "بيض وطماطم وفلفل في طاسة.",
+          "tags": [
+            "فطار",
+            "شرقي"
+          ],
+          "allergens": [
+            "بيض"
+          ],
+          "spice_level": 1,
+          "prep_minutes": 11,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 217,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شكشوكة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "btats_balbyd",
+          "sku": "BM-BTATS_BALBYD",
+          "name": "بطاطس بالبيض",
+          "price_egp": 80,
+          "description": "بطاطس محمرة مع بيض.",
+          "tags": [
+            "فطار"
+          ],
+          "allergens": [
+            "بيض"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 248,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بطاطس بالبيض على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tbq_ftar_shrqy",
+          "sku": "BM-TBQ_FTAR_SHRQY",
+          "name": "طبق فطار شرقي",
+          "price_egp": 150,
+          "description": "فول وطعمية وجبنة وبيض وعيش.",
+          "tags": [
+            "فطار",
+            "مشاركة"
+          ],
+          "allergens": [
+            "بيض",
+            "ألبان",
+            "جلوتين",
+            "سمسم"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 14,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 465,
+          "image_prompt": "صورة طبق مطعم واقعية لـ طبق فطار شرقي على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "kids",
+      "name": "أطفال",
+      "display_order": 11,
+      "items": [
+        {
+          "id": "kydz_nagts",
+          "sku": "BM-KYDZ_NAGTS",
+          "name": "كيدز ناجتس",
+          "price_egp": 115,
+          "description": "ناجتس فراخ وبطاطس وعصير.",
+          "tags": [
+            "أطفال",
+            "فراخ"
+          ],
+          "allergens": [
+            "جلوتين",
+            "بيض"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 15,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 356,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كيدز ناجتس على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "kydz_brgr",
+          "sku": "BM-KYDZ_BRGR",
+          "name": "كيدز برجر",
+          "price_egp": 125,
+          "description": "برجر صغير وبطاطس.",
+          "tags": [
+            "أطفال",
+            "برجر"
+          ],
+          "allergens": [
+            "جلوتين",
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 15,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 387,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كيدز برجر على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "mkrwnh_atfal",
+          "sku": "BM-MKRWNH_ATFAL",
+          "name": "مكرونة أطفال",
+          "price_egp": 95,
+          "description": "مكرونة صوص طماطم خفيف.",
+          "tags": [
+            "أطفال",
+            "باستا"
+          ],
+          "allergens": [
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 294,
+          "image_prompt": "صورة طبق مطعم واقعية لـ مكرونة أطفال على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "bytza_atfal",
+          "sku": "BM-BYTZA_ATFAL",
+          "name": "بيتزا أطفال",
+          "price_egp": 105,
+          "description": "بيتزا جبنة صغيرة.",
+          "tags": [
+            "أطفال",
+            "بيتزا"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 14,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 325,
+          "image_prompt": "صورة طبق مطعم واقعية لـ بيتزا أطفال على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "frakh_mshwyh_atfal",
+          "sku": "BM-FRAKH_MSHWYH_ATFAL",
+          "name": "فراخ مشوية أطفال",
+          "price_egp": 135,
+          "description": "قطع فراخ مشوية مع رز.",
+          "tags": [
+            "أطفال",
+            "فراخ",
+            "صحي"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 16,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 418,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فراخ مشوية أطفال على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "حلويات",
+      "display_order": 12,
+      "items": [
+        {
+          "id": "knafh_balqshth",
+          "sku": "BM-KNAFH_BALQSHTH",
+          "name": "كنافة بالقشطة",
+          "price_egp": 85,
+          "description": "كنافة طازة بالقشطة والفستق.",
+          "tags": [
+            "حلو",
+            "شرقي"
+          ],
+          "allergens": [
+            "ألبان",
+            "مكسرات",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 10,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 263,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كنافة بالقشطة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "am_aly",
+          "sku": "BM-AM_ALY",
+          "name": "أم علي",
+          "price_egp": 95,
+          "description": "أم علي بالمكسرات واللبن.",
+          "tags": [
+            "حلو",
+            "شرقي"
+          ],
+          "allergens": [
+            "ألبان",
+            "مكسرات",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 294,
+          "image_prompt": "صورة طبق مطعم واقعية لـ أم علي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "mwltn_kyk",
+          "sku": "BM-MWLTN_KYK",
+          "name": "مولتن كيك",
+          "price_egp": 110,
+          "description": "كيك شوكولاتة ساخن مع آيس كريم.",
+          "tags": [
+            "حلو",
+            "شوكولاتة"
+          ],
+          "allergens": [
+            "ألبان",
+            "بيض",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 13,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 341,
+          "image_prompt": "صورة طبق مطعم واقعية لـ مولتن كيك على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "tshyz_kyk",
+          "sku": "BM-TSHYZ_KYK",
+          "name": "تشيز كيك",
+          "price_egp": 120,
+          "description": "تشيز كيك بصوص فراولة.",
+          "tags": [
+            "حلو",
+            "بارد"
+          ],
+          "allergens": [
+            "ألبان",
+            "جلوتين"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 372,
+          "image_prompt": "صورة طبق مطعم واقعية لـ تشيز كيك على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "rz_blbn",
+          "sku": "BM-RZ_BLBN",
+          "name": "رز بلبن",
+          "price_egp": 55,
+          "description": "رز بلبن بالقرفة.",
+          "tags": [
+            "حلو",
+            "شرقي"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 170,
+          "image_prompt": "صورة طبق مطعم واقعية لـ رز بلبن على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "brawnyz",
+          "sku": "BM-BRAWNYZ",
+          "name": "براونيز",
+          "price_egp": 90,
+          "description": "براونيز شوكولاتة بالجوز.",
+          "tags": [
+            "حلو",
+            "شوكولاتة"
+          ],
+          "allergens": [
+            "ألبان",
+            "بيض",
+            "جلوتين",
+            "مكسرات"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 8,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 279,
+          "image_prompt": "صورة طبق مطعم واقعية لـ براونيز على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "wafl_nwtyla",
+          "sku": "BM-WAFL_NWTYLA",
+          "name": "وافل نوتيلا",
+          "price_egp": 135,
+          "description": "وافل بصوص شوكولاتة وبندق.",
+          "tags": [
+            "حلو",
+            "شوكولاتة"
+          ],
+          "allergens": [
+            "ألبان",
+            "بيض",
+            "جلوتين",
+            "مكسرات"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 12,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 418,
+          "image_prompt": "صورة طبق مطعم واقعية لـ وافل نوتيلا على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "ays_krym_3_bwlh",
+          "sku": "BM-AYS_KRYM_3_BWLH",
+          "name": "آيس كريم 3 بولة",
+          "price_egp": 95,
+          "description": "اختيار 3 نكهات آيس كريم.",
+          "tags": [
+            "حلو",
+            "بارد"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 294,
+          "image_prompt": "صورة طبق مطعم واقعية لـ آيس كريم 3 بولة على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "مشروبات",
+      "display_order": 13,
+      "items": [
+        {
+          "id": "lymwn_nanaa",
+          "sku": "BM-LYMWN_NANAA",
+          "name": "ليمون نعناع",
+          "price_egp": 65,
+          "description": "ليمون فريش بالنعناع.",
+          "tags": [
+            "بارد",
+            "فريش",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 201,
+          "image_prompt": "صورة طبق مطعم واقعية لـ ليمون نعناع على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "brtqal_frysh",
+          "sku": "BM-BRTQAL_FRYSH",
+          "name": "برتقال فريش",
+          "price_egp": 70,
+          "description": "عصير برتقال طبيعي.",
+          "tags": [
+            "بارد",
+            "فريش",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 217,
+          "image_prompt": "صورة طبق مطعم واقعية لـ برتقال فريش على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "mangw_frysh",
+          "sku": "BM-MANGW_FRYSH",
+          "name": "مانجو فريش",
+          "price_egp": 85,
+          "description": "عصير مانجو طبيعي.",
+          "tags": [
+            "بارد",
+            "فريش",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 263,
+          "image_prompt": "صورة طبق مطعم واقعية لـ مانجو فريش على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "frawlh",
+          "sku": "BM-FRAWLH",
+          "name": "فراولة",
+          "price_egp": 75,
+          "description": "عصير فراولة بالحليب اختيارياً.",
+          "tags": [
+            "بارد",
+            "فريش",
+            "مشروب"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 232,
+          "image_prompt": "صورة طبق مطعم واقعية لـ فراولة على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "qهwh_trky",
+          "sku": "BM-QهWH_TRKY",
+          "name": "قهوة تركي",
+          "price_egp": 45,
+          "description": "قهوة تركي سادة أو وسط.",
+          "tags": [
+            "سخن",
+            "قهوة",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 6,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 139,
+          "image_prompt": "صورة طبق مطعم واقعية لـ قهوة تركي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "asbrysw",
+          "sku": "BM-ASBRYSW",
+          "name": "إسبريسو",
+          "price_egp": 55,
+          "description": "شوت إسبريسو.",
+          "tags": [
+            "سخن",
+            "قهوة",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 5,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 170,
+          "image_prompt": "صورة طبق مطعم واقعية لـ إسبريسو على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "kabtshynw",
+          "sku": "BM-KABTSHYNW",
+          "name": "كابتشينو",
+          "price_egp": 75,
+          "description": "إسبريسو ولبن فوم.",
+          "tags": [
+            "سخن",
+            "قهوة",
+            "مشروب"
+          ],
+          "allergens": [
+            "ألبان"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 7,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 232,
+          "image_prompt": "صورة طبق مطعم واقعية لـ كابتشينو على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shay",
+          "sku": "BM-SHAY",
+          "name": "شاي",
+          "price_egp": 35,
+          "description": "شاي أحمر أو أخضر.",
+          "tags": [
+            "سخن",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 4,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 120,
+          "image_prompt": "صورة طبق مطعم واقعية لـ شاي على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "shlb",
+          "sku": "BM-SHLB",
+          "name": "سحلب",
+          "price_egp": 65,
+          "description": "سحلب بالمكسرات والقرفة.",
+          "tags": [
+            "سخن",
+            "مشروب"
+          ],
+          "allergens": [
+            "ألبان",
+            "مكسرات"
+          ],
+          "spice_level": 0,
+          "prep_minutes": 7,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 201,
+          "image_prompt": "صورة طبق مطعم واقعية لـ سحلب على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "myaه_madnyh",
+          "sku": "BM-MYAه_MADNYH",
+          "name": "مياه معدنية",
+          "price_egp": 20,
+          "description": "زجاجة مياه صغيرة.",
+          "tags": [
+            "بارد",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 1,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 120,
+          "image_prompt": "صورة طبق مطعم واقعية لـ مياه معدنية على ترابيزة خشب بإضاءة دافئة"
+        },
+        {
+          "id": "mshrwb_ghazy",
+          "sku": "BM-MSHRWB_GHAZY",
+          "name": "مشروب غازي",
+          "price_egp": 35,
+          "description": "اختيار كولا أو ليمون أو برتقال.",
+          "tags": [
+            "بارد",
+            "مشروب"
+          ],
+          "allergens": [],
+          "spice_level": 0,
+          "prep_minutes": 1,
+          "available": true,
+          "modifiers": [
+            "مستوى الملح",
+            "بدون بصل",
+            "صوص إضافي"
+          ],
+          "calories_estimate": 120,
+          "image_prompt": "صورة طبق مطعم واقعية لـ مشروب غازي على ترابيزة خشب بإضاءة دافئة"
+        }
+      ]
+    }
+  ],
+  "modifiers": {
+    "spice_levels": [
+      "بدون شطة",
+      "شطة خفيفة",
+      "شطة وسط",
+      "حار جدًا"
+    ],
+    "bread_options": [
+      "عيش بلدي",
+      "عيش صاج",
+      "عيش فينو",
+      "بدون عيش"
+    ],
+    "side_options": [
+      "بطاطس",
+      "رز بسمتي",
+      "رز صيادية",
+      "خضار سوتيه",
+      "سلطة"
+    ],
+    "sauces": [
+      {
+        "name": "تومية",
+        "price_egp": 15
+      },
+      {
+        "name": "طحينة",
+        "price_egp": 15
+      },
+      {
+        "name": "باربكيو",
+        "price_egp": 18
+      },
+      {
+        "name": "جبنة شيدر",
+        "price_egp": 25
+      },
+      {
+        "name": "صوص حار",
+        "price_egp": 12
+      }
+    ],
+    "add_ons": [
+      {
+        "name": "جبنة إضافية",
+        "price_egp": 25
+      },
+      {
+        "name": "عيش إضافي",
+        "price_egp": 10
+      },
+      {
+        "name": "بطاطس إضافية",
+        "price_egp": 45
+      },
+      {
+        "name": "قطعة فراخ إضافية",
+        "price_egp": 65
+      }
+    ]
+  },
+  "combos": [
+    {
+      "id": "combo_shawarma",
+      "name": "كومبو شاورما",
+      "items": [
+        "شاورما فراخ",
+        "بطاطس محمرة",
+        "مشروب غازي"
+      ],
+      "price_egp": 155,
+      "tags": [
+        "كومبو",
+        "فراخ"
+      ]
+    },
+    {
+      "id": "combo_burger",
+      "name": "كومبو برجر",
+      "items": [
+        "برجر لحم",
+        "بطاطس محمرة",
+        "مشروب غازي"
+      ],
+      "price_egp": 225,
+      "tags": [
+        "كومبو",
+        "برجر"
+      ]
+    },
+    {
+      "id": "family_grill",
+      "name": "عرض العيلة مشويات",
+      "items": [
+        "ميكس جريل عائلي",
+        "ميكس مزات شرقي",
+        "مشروب غازي"
+      ],
+      "price_egp": 1120,
+      "tags": [
+        "عائلي",
+        "مشويات"
+      ]
+    },
+    {
+      "id": "seafood_combo",
+      "name": "كومبو سي فود",
+      "items": [
+        "جمبري مشوي",
+        "كاليماري مقلي",
+        "أرز صيادية"
+      ],
+      "price_egp": 620,
+      "tags": [
+        "سي فود"
+      ]
+    },
+    {
+      "id": "kids_combo",
+      "name": "وجبة أطفال",
+      "items": [
+        "كيدز ناجتس",
+        "مياه معدنية"
+      ],
+      "price_egp": 125,
+      "tags": [
+        "أطفال"
+      ]
+    }
+  ],
+  "promotions": [
+    {
+      "name": "غداء سريع",
+      "rule": "ساندوتش + بطاطس + مشروب",
+      "valid_days": [
+        "sunday",
+        "monday",
+        "tuesday"
+      ],
+      "discount_percent": 10
+    },
+    {
+      "name": "تجمع العيلة",
+      "rule": "خصم على ميكس جريل عائلي",
+      "valid_days": [
+        "friday",
+        "saturday"
+      ],
+      "discount_percent": 8
+    },
+    {
+      "name": "حلو بعد الأكل",
+      "rule": "خصم 15% على الحلويات مع أي طبق رئيسي",
+      "valid_days": [
+        "all"
+      ],
+      "discount_percent": 15
+    }
+  ],
+  "faqs": [
+    {
+      "question": "هل في أكل نباتي؟",
+      "answer": "أيوه، عندنا سلطات وشوربات ومسقعة وبيتزا خضار وساندوتش فلافل."
+    },
+    {
+      "question": "هل في أكل صيامي؟",
+      "answer": "أيوه، اختيارات صيامي متاحة زي شوربة الخضار، فتوش، ورق عنب، فلافل، ومسقعة نباتي."
+    },
+    {
+      "question": "هل في توصيل؟",
+      "answer": "أيوه، التوصيل متاح لمناطق محددة حسب الفرع، والمدة غالبًا 45-60 دقيقة."
+    },
+    {
+      "question": "أقل أوردر كام؟",
+      "answer": "أقل أوردر يبدأ من 150 جنيه وبيختلف حسب المنطقة."
+    },
+    {
+      "question": "هل ينفع أحجز؟",
+      "answer": "أكيد، محتاجين اليوم، الساعة، عدد الأفراد، الاسم، ورقم الموبايل."
+    },
+    {
+      "question": "هل في دفع فيزا؟",
+      "answer": "أيوه، متاح كاش وفيزا ومحافظ إلكترونية عند الاستلام."
+    },
+    {
+      "question": "هل الأسعار شاملة الضريبة؟",
+      "answer": "الأسعار التجريبية غير شاملة ضريبة وخدمة، حسب سياسة المطعم."
+    },
+    {
+      "question": "هل في عروض؟",
+      "answer": "في عروض متغيرة زي كومبو الشاورما وعرض العيلة وخصم الحلويات مع الأطباق الرئيسية."
+    },
+    {
+      "question": "هل في أكل أطفال؟",
+      "answer": "أيوه، عندنا كيدز ناجتس، كيدز برجر، مكرونة أطفال، وبيتزا أطفال."
+    },
+    {
+      "question": "هل عندكم أكل حار؟",
+      "answer": "أيوه، ممكن تختار مستوى الشطة، وفي أصناف حارة زي سجق بلدي وأجنحة بافلو."
+    },
+    {
+      "question": "هل في حساسية مكسرات؟",
+      "answer": "بعض الأصناف فيها مكسرات، والأفضل نحولك لفريق المطعم لو عندك حساسية شديدة."
+    },
+    {
+      "question": "مواعيد الفطار؟",
+      "answer": "الفطار متاح من 8 صباحًا لـ 12 ظهرًا في الداتا التجريبية."
+    },
+    {
+      "question": "آخر أوردر إمتى؟",
+      "answer": "آخر أوردر قبل الإغلاق بنصف ساعة."
+    },
+    {
+      "question": "هل ينفع أعدل الطلب؟",
+      "answer": "ينفع طالما الطلب لسه ما اتأكدش من الكاشير."
+    },
+    {
+      "question": "هل في تيك أواي؟",
+      "answer": "أيوه، تقدر تعمل طلب تيك أواي ونجهزه للاستلام."
+    }
+  ],
+  "upsell_rules": [
+    {
+      "when_tags": [
+        "ساندوتش"
+      ],
+      "suggest": [
+        "بطاطس محمرة",
+        "مشروب غازي"
+      ]
+    },
+    {
+      "when_tags": [
+        "مشوي"
+      ],
+      "suggest": [
+        "سلطة طحينة",
+        "أرز بسمتي",
+        "ميكس مزات شرقي"
+      ]
+    },
+    {
+      "when_tags": [
+        "سي فود"
+      ],
+      "suggest": [
+        "أرز صيادية",
+        "سلطة خضراء"
+      ]
+    },
+    {
+      "when_tags": [
+        "حلو"
+      ],
+      "suggest": [
+        "قهوة تركي",
+        "كابتشينو"
+      ]
+    }
+  ],
+  "handoff": {
+    "triggers": [
+      "شكوى",
+      "مشكلة",
+      "مدير",
+      "فلوس",
+      "استرجاع",
+      "تأخير كبير",
+      "حساسية شديدة",
+      "تسمم",
+      "مش عاجبني"
+    ],
+    "message": "تمام، هحوّل كلامك لحد من فريق المطعم يتابع معاك بنفسه."
+  },
+  "guardrails": [
+    "لا تؤكد حجز نهائي بدون رسالة تأكيد من المطعم.",
+    "لا تخترع سعر أو صنف غير موجود في الداتا.",
+    "اسأل عن الحساسية قبل ترشيح أصناف لو العميل ذكر حساسية.",
+    "حوّل لبشري في الشكاوى أو المشاكل المالية أو الحساسية الشديدة."
+  ]
+}
