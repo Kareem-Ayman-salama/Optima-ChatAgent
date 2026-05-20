@@ -1,70 +1,74 @@
 # Arabic Restaurant AI Agent Starter
 
-ده prototype صغير لفكرة agent مطعم عربي يرد على العملاء في واتساب/تليجرام/مسنجر/فيسبوك.
+This folder contains the core prototype for an Arabic restaurant assistant that can respond to customers across chat channels such as WhatsApp, Telegram, Messenger, or Facebook.
 
-الفكرة المهمة: مش محتاج dataset تدريب في الأول. محتاج knowledge base واضحة عن المطعم، وقواعد رد، وبعدها ممكن نركب فوقها موديل جاهز زي OpenAI عشان يفهم اللغة بحرية أكتر ويستدعي functions.
+The important idea is that the first version does not need model fine-tuning. It needs a clear restaurant knowledge base, response rules, and tool-style functions. A production LLM can be added later for more flexible language understanding.
 
-## الموجود هنا
+## Contents
 
-- `data/restaurant_knowledge_base.json`: داتا كبيرة production-like لمطعم عربي: 13 قسم، 113 صنف، فروع، مواعيد، توصيل، حجز، إضافات، allergens، عروض، combos، FAQ، وguardrails.
-- `data/restaurant_knowledge_base.small.json`: نسخة backup من الداتا الصغيرة الأولى.
-- `data/restaurant_intent_dataset.jsonl`: 606 مثال intent لتدريب/تقييم فهم الرسائل.
-- `data/restaurant_conversation_scenarios.json`: محادثات كاملة لاختبار الحجز والطلبات والشكاوى.
-- `restaurant_agent.py`: agent محلي بسيط يرد بالعربي ويعمل بحث في المنيو ويجمع بيانات الحجز.
-- فيه cashier flow بسيط: يضيف أصناف في سلة، يحسب الإجمالي، ويسأل عن دليفري/تيك أواي/أكل في المطعم.
-- `sample_conversations.json`: سيناريوهات اختبار.
-- `simulate_chat.py`: تشغيل محادثات جاهزة أو تجربة interactive.
-- `tools/generate_large_dataset.py`: generator يعيد توليد الداتا الكبيرة بشكل منظم.
+- `data/restaurant_knowledge_base.json`: Synthetic production-like restaurant data, including menu items, branches, opening hours, delivery rules, reservation rules, offers, combos, FAQs, allergens, and guardrails.
+- `data/restaurant_knowledge_base.small.json`: Smaller backup version of the knowledge base.
+- `data/restaurant_intent_dataset.jsonl`: Intent examples for evaluation or future training experiments.
+- `data/restaurant_conversation_scenarios.json`: Full conversation scenarios for testing bookings, orders, and complaints.
+- `restaurant_agent.py`: Local Arabic assistant logic with menu search, FAQ handling, and reservation/order data collection.
+- `sample_conversations.json`: Ready-made test scenarios.
+- `simulate_chat.py`: CLI runner for scripted or interactive chat.
+- `tools/generate_large_dataset.py`: Generator for rebuilding the large synthetic data files.
 
-## تجربة سريعة
+## Quick Test
 
 ```powershell
 python .\restaurant_ai_agent\simulate_chat.py
 ```
 
-للدردشة يدويًا:
+Interactive chat:
 
 ```powershell
 python .\restaurant_ai_agent\simulate_chat.py --interactive
 ```
 
-## إعادة توليد الداتا الكبيرة
+## Run the Streamlit Demo
+
+From the repository root:
+
+```powershell
+python -m streamlit run restaurant_ai_agent/streamlit_app.py
+```
+
+## Regenerate Data
 
 ```powershell
 python -B .\restaurant_ai_agent\tools\generate_large_dataset.py
 ```
 
-السكريبت يكتب:
+The generator writes:
 
 - `data/restaurant_knowledge_base.json`
 - `data/restaurant_intent_dataset.jsonl`
 - `data/restaurant_conversation_scenarios.json`
 - `sample_conversations.json`
 
-## شكل الداتا الحقيقي
+## Real Restaurant Data Needed
 
-الداتا اللي محتاجها من أي مطعم غالبًا تكون:
+For a real deployment, replace the synthetic data with:
 
-- اسم المطعم، العنوان، المواعيد، رقم التواصل.
-- المنيو: الأقسام، الأصناف، السعر، الوصف، هل متاح، tags زي `نباتي` أو `فراخ` أو `غداء`.
-- قواعد الحجز: البيانات المطلوبة، الحد الأقصى، طريقة التأكيد.
-- قواعد التوصيل: المناطق، المدة، أقل أوردر.
-- FAQ: الأسئلة المتكررة وإجاباتها.
-- جمل البداية والختام: موجودة تحت `restaurant.conversation`.
-- قواعد الطلبات: موجودة تحت `restaurant.order_policy`.
-- handoff: إمتى نحول لحد بشري، زي الشكاوى أو الحساسية الشديدة.
+- Restaurant name, branches, addresses, opening hours, and contact numbers.
+- Menu categories, items, descriptions, prices, availability, and tags.
+- Reservation rules and required customer fields.
+- Delivery areas, minimum order, and expected delivery times.
+- FAQ answers and handoff rules.
+- Order policies, refund rules, complaint handling, and human escalation rules.
 
-## التطوير بعد الـ prototype
+## Next Development Steps
 
-1. نوصل agent بقناة واحدة أولًا، ويفضل Telegram للتجربة لأنه أسرع في الإعداد.
-2. نبدل الرد المحلي بموديل جاهز، ونخليه يستدعي tools زي `search_menu` و`create_reservation`.
-3. نسجل المحادثات الحقيقية بعد موافقة العميل ونطلع منها test cases.
-4. نضيف human handoff لما الثقة قليلة أو في مشكلة حساسة.
-5. نربطه بقاعدة بيانات للحجوزات والطلبات بدل التخزين المؤقت.
+1. Connect one real channel first, usually Telegram for the fastest prototype.
+2. Replace local rule-based responses with an LLM that can call structured tools such as `search_menu` and `create_reservation`.
+3. Log real conversations only with client approval, then turn them into test cases.
+4. Add human handoff for low-confidence responses, complaints, allergies, and sensitive situations.
+5. Store reservations and orders in a database instead of temporary in-memory state.
 
-## ملاحظات مهمة
+## Notes
 
-- تدريب موديل من الصفر مش مناسب كبداية. أغلى وأبطأ ومش محتاجينه.
-- الـ dataset هنا هدفه تقييم وتجربة السلوك، مش fine-tuning.
-- لازم يكون فيه guardrails: ما يخترعش أسعار، ما يؤكدش حجز نهائي إلا بعد توفر فعلي، وما يتعاملش مع شكاوى كبيرة بدون تحويل لبشري.
-- الداتا الكبيرة واقعية ومناسبة للديمو، لكنها ليست منيو براند حقيقي ولا أسعار مطعم فعلي. لاستعمال مطعم حقيقي، بدّل الأصناف والأسعار من منيو العميل.
+- The included dataset is for behavior testing and demos, not model fine-tuning by default.
+- The assistant should not invent prices, confirm bookings without availability, or handle serious complaints without human escalation.
+- The included restaurant data is synthetic and should not be presented as a real brand menu.
